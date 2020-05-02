@@ -1,0 +1,70 @@
+.contactContainer {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactGraphic {
+  position: relative;
+}
+.contactImg {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.contactImgOutline {
+  position: absolute;
+  left: -40px;
+  top: 40px;
+  height: 400px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid $primary;
+  z-index: -1;
+}
+
+.contact {
+  margin: 50px 0 0 30px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contactHeading {
+  margin-bottom: 30px;
+}
+
+.contactForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.userInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm input {
+  margin: 0 20px 20px 0;
+  padding: 5px 0 5px 10px;
+  border-radius: 7px;
+  font-family: $baseFont;
+  font-size: 1.6rem;
+  border: 1px solid lightgrey;
+  height: 40px;
+  width: 22vw;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  font-family: $baseFont;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+  height: 160px;
+}

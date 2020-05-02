@@ -1,0 +1,45 @@
+.footerLargeWrapper {
+  max-width: 1800px;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: $secondary;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerText {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  font-size: 1.4rem;
+}
+
+.footerNav {
+  display: flex;
+  margin-left: 15px;
+}
+
+.footerNav li {
+  margin: 0 10px;
+}
+
+.footerSocial {
+  display: flex;
+  padding-top: 0;
+
+  img {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+  }
+}
+
+span.accentLineFooterMiddle {
+  display: none;
+}

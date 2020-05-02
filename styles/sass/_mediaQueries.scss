@@ -178,6 +178,27 @@
     grid-column-end: 4;
     height: 240px;
   }
+
+  .contactContainer {
+    margin: 0 0 100px 0;
+  }
+
+  .contactHeading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contactGraphic {
+    display: none;
+  }
+
+  .contact {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactForm input {
+    width: 95%;
+  }
 }
 
 @media (max-width: 1130px) {
@@ -200,6 +221,28 @@
       width: 375px;
       height: 375px;
     }
+  }
+
+  .footerText {
+    flex-direction: column;
+  }
+
+  span.accentLineFooterMiddle {
+    display: initial;
+    margin: 40px 0 10px 0;
+  }
+  span.accentLineFooterBottom {
+    display: none;
+  }
+
+  .footerSocial {
+    margin-bottom: 40px;
+    img {
+      margin: 0 10px;
+    }
+  }
+  .copyright {
+    order: 1;
   }
 }
 
@@ -306,7 +349,8 @@
     transition: all 0.7s;
   }
 
-  .webDev {
+  .webDev,
+  .graphicDesign {
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -325,6 +369,28 @@
     height: 450px;
     width: 100%;
   }
+
+  .graphicImg1,
+  .graphicImg2,
+  .graphicImg3,
+  .graphicImg4 {
+    height: 450px;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .contactForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+
+  .contactForm input {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -332,6 +398,12 @@
   .webDevImg2,
   .webDevImg3,
   .webDevImg4 {
+    height: 350px;
+  }
+  .graphicImg1,
+  .graphicImg2,
+  .graphicImg3,
+  .graphicImg4 {
     height: 350px;
   }
 }
@@ -399,6 +471,27 @@
   .webDevImg4 {
     height: 300px;
   }
+
+  .graphicImg1,
+  .graphicImg2,
+  .graphicImg3,
+  .graphicImg4 {
+    height: 300px;
+  }
+
+  .footerNav {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  span.accentLineFooterMiddle {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 465px) {
@@ -443,6 +536,13 @@
   .webDevImg2,
   .webDevImg3,
   .webDevImg4 {
+    height: 250px;
+  }
+
+  .graphicImg1,
+  .graphicImg2,
+  .graphicImg3,
+  .graphicImg4 {
     height: 250px;
   }
 }

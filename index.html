@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <!-- logo and nav bar above pink background -->
       <div class="headerBar wrapper">
         <img class="sbLogo" src="./assets/sbLogo.png" alt="Shanel Beebe logo" />
@@ -239,7 +239,7 @@
         </ul>
       </section>
 
-      <section class="projects" id="projects">
+      <section class="webDevProjects" id="projects">
         <div class="projectsHeading">
           <span class="accentLine"></span>
           <h2>Web Development</h2>
@@ -375,6 +375,170 @@
           </div>
         </section>
       </section>
+      <section class="graphicDesignProjects">
+        <div class="projectsHeading">
+          <span class="accentLine"></span>
+          <h2>Graphic Design</h2>
+        </div>
+        <section class="graphicDesign">
+          <div class="overlayContainer graphicImg1">
+            <img
+              class="graphicImg1"
+              src="./assets/logosMU.png"
+              alt="Tablet on a tabletop displaying logo designs"
+            />
+            <div class="overlay">
+              <h3>Logo Design</h3>
+              <p>Adobe Illustrator</p>
+            </div>
+          </div>
+          <div class="overlayContainer graphicImg2">
+            <img
+              class="graphicImg2"
+              src="./assets/brandingMU.png"
+              alt="A tablet on a desk displaying branding design"
+            />
+            <div class="overlay">
+              <h3>Branding</h3>
+              <p>Adobe Illustrator & InDesign</p>
+            </div>
+          </div>
+          <div class="overlayContainer graphicImg3">
+            <img
+              class="graphicImg3"
+              src="./assets/pageLayoutMU.png"
+              alt="A laptop that is displaying page layout designs"
+            />
+            <div class="overlay">
+              <h3>Page Layout</h3>
+              <p>Adobe Photoshop & InDesign</p>
+            </div>
+          </div>
+          <div class="overlayContainer graphicImg4">
+            <img
+              class="graphicImg4"
+              src="./assets/photoManipMU.png"
+              alt="A desktop computer displaying photo manipulation design"
+            />
+            <div class="overlay">
+              <h3>Photo Manipulation</h3>
+              <p>Adobe Photoshop</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="contactContainer" id="contact">
+        <div class="contactGraphic">
+          <img
+            class="contactImg"
+            src="./assets/contactImage.jpg"
+            alt="Computer keyboard, pens, glasses and notepads on a desk"
+          />
+          <div class="contactImgOutline"></div>
+        </div>
+        <div class="contact">
+          <div class="contactHeading">
+            <span class="accentLine"></span>
+            <h2>Get In Touch</h2>
+          </div>
+          <form action="" class="contactForm">
+            <div class="userInputs">
+              <label for="name" class="visuallyHidden">Name</label>
+              <input type="text" class="name" id="name" placeholder="Name" />
+              <label for="email" class="visuallyHidden">Email Address</label>
+              <input
+                type="text"
+                class="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <label for="subject" class="visuallyHidden">Subject</label>
+              <input
+                type="text"
+                class="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="userMessage">
+              <label for="message" class="visuallyHidden">Message</label>
+              <textarea
+                class="message"
+                name="message"
+                placeholder="Message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </form>
+          <button>Send Message</button>
+        </div>
+      </section>
     </main>
+
+    <footer class="footerLargeWrapper">
+      <div class="wrapper footerWrapper">
+        <img src="./assets/sbLogo.png" alt="Shanel Beebe logo" class="sbLogo" />
+        <div class="footerText">
+          <p class="copyright">&#169; Shanel Beebe 2020</p>
+          <ul class="footerNav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <span class="accentLine accentLineFooterMiddle"></span>
+          <ul class="footerSocial">
+            <li>
+              <a
+                aria-label="Come tweet at me!"
+                href="https://twitter.com/ShanelBeebe"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/twitter.svg" alt="twitter icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                aria-label="See my web dev work on Github."
+                href="https://github.com/shanelbb"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/github.svg" alt="github icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                aria-label="See my graphic design work on Behance."
+                href="https://www.behance.net/shanelbeebdfa9"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/behance.svg" alt="behance icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                aria-label="Connect with me on LinkedIn."
+                href="https://www.linkedin.com/in/shanelbeebe"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/linkedin.svg" alt="linkedIn icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                aria-label="Send me an email."
+                href="mailto:hello@shanelbeebe.com"
+                ><img src="./assets/envelope.svg" alt="email icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <span class="accentLine accentLineFooterBottom"></span>
+      </div>
+    </footer>
   </body>
 </html>
