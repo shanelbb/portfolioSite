@@ -1,3 +1,7 @@
+.skills {
+  margin: 150px 0 100px 0;
+}
+
 .skillLogos {
   margin: 50px 0;
   display: grid;
@@ -8,6 +12,14 @@
 
 .skillLogos li img {
   height: 150px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill h3 {
+  text-align: center;
 }
 
 .fillerImg {

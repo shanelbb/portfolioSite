@@ -515,6 +515,10 @@ h2 {
   padding: 30px 0;
 }
 
+.skills {
+  margin: 150px 0 100px 0;
+}
+
 .skillLogos {
   margin: 50px 0;
   display: -ms-grid;
@@ -527,6 +531,14 @@ h2 {
 
 .skillLogos li img {
   height: 150px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill h3 {
+  text-align: center;
 }
 
 .fillerImg {
@@ -645,6 +657,8 @@ h2 {
 h3 {
   font-size: 1.8rem;
   font-weight: 500;
+  line-height: 1.4;
+  margin: 0 20px;
 }
 
 @media (min-width: 3500px) {
