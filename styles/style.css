@@ -626,17 +626,24 @@ h2 {
 }
 
 .overlay p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 10px;
 }
 
 .projectsLink {
   height: 20px;
   margin: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.projectsLink:hover, .projectsLink:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -727,6 +734,9 @@ h3 {
     -ms-grid-columns: (minmax(175px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   }
+  .webDevImg1 {
+    width: 275px;
+  }
 }
 
 @media (max-width: 1270px) {
@@ -743,11 +753,47 @@ h3 {
     width: 400px;
     height: 400px;
   }
+  .webDevImg1 {
+    width: 250px;
+    height: 450px;
+  }
+  .webDevImg2,
+  .webDevImg3,
+  .webDevImg4 {
+    height: 215px;
+  }
 }
 
 @media (max-width: 1192px) {
   .fillerImg {
     display: initial;
+  }
+  .webDev {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .webDevImg1,
+  .webDevImg2,
+  .webDevImg3 {
+    width: 100%;
+  }
+  .webDevImg1 {
+    height: 500px;
+  }
+  .webDevImg2,
+  .webDevImg3 {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    height: 240px;
+  }
+  .webDevImg4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    height: 240px;
   }
 }
 
@@ -893,6 +939,35 @@ h3 {
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
+  .webDev {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .webDevImg1 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .webDevImg1,
+  .webDevImg2,
+  .webDevImg3,
+  .webDevImg4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    height: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .webDevImg1,
+  .webDevImg2,
+  .webDevImg3,
+  .webDevImg4 {
+    height: 350px;
+  }
 }
 
 @media (max-height: 675px) {
@@ -942,6 +1017,12 @@ h3 {
     -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+  .webDevImg1,
+  .webDevImg2,
+  .webDevImg3,
+  .webDevImg4 {
+    height: 300px;
+  }
 }
 
 @media (max-width: 465px) {
@@ -965,6 +1046,12 @@ h3 {
   }
   .headerRight img {
     width: 250px;
+    height: 250px;
+  }
+  .webDevImg1,
+  .webDevImg2,
+  .webDevImg3,
+  .webDevImg4 {
     height: 250px;
   }
 }
