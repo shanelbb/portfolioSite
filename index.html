@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shanel Beebe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- logo and nav bar above pink background -->
+      <div class="headerBar wrapper">
+        <img class="sbLogo" src="./assets/sbLogo.png" alt="Shanel Beebe logo" />
+
+        <nav class="headerNav">
+          <!-- Hamburger menu icon and checkbox for mobile nav -->
+          <label for="toggle" class="toggle">
+            <img
+              class="menuIcon"
+              src="./assets/bars-solid.svg"
+              alt="hamburger menu icon"
+            />
+          </label>
+          <input type="checkbox" id="toggle" class="toggle" />
+          <ul class="headerNavList">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about" class="navPink"><li>About</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#projects" class="navPink"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </nav>
+        <!-- <p>Portfolio Coming Soon!</p> -->
+      </div>
+      <!-- large wrapper (light pink background) -->
+      <div class="largeWrapper">
+        <!-- content wrapper starts -->
+        <div class="wrapper headerSection">
+          <section class="headerLeft">
+            <span class="accentLine"></span>
+            <h1>I'm Shanel</h1>
+            <p class="headerP">Front-end Web Developer & Graphic Designer</p>
+            <a href="mailto:hello@shanelbeebe.com"
+              ><button class="headerBtn">Get In Touch</button></a
+            >
+            <!-- Social media links (display:none @ < 1024px as links move below image) -->
+            <ul class="socialNav">
+              <li>
+                <a
+                  aria-label="Come tweet at me!"
+                  href="https://twitter.com/ShanelBeebe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/twitter.svg" alt="twitter icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="See my web dev work on Github."
+                  href="https://github.com/shanelbb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/github.svg" alt="github icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="See my graphic design work on Behance."
+                  href="https://www.behance.net/shanelbeebdfa9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/behance.svg" alt="behance icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="Connect with me on LinkedIn."
+                  href="https://www.linkedin.com/in/shanelbeebe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/linkedin.svg" alt="linkedIn icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="Send me an email."
+                  href="mailto:hello@shanelbeebe.com"
+                  ><img src="./assets/envelope.svg" alt="email icon"
+                /></a>
+              </li>
+            </ul>
+          </section>
+          <!-- right side of header in desktop mode -->
+          <section class="headerRight">
+            <img
+              src="./assets/selfPortrait.png"
+              alt="illustrated self portrait"
+            />
+            <!-- display:none when screen width is >1024px -->
+            <ul class="socialNavBtm">
+              <li>
+                <a
+                  aria-label="Come tweet at me!"
+                  href="https://twitter.com/ShanelBeebe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/twitter.svg" alt="twitter icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="See my web dev work on Github."
+                  href="https://github.com/shanelbb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/github.svg" alt="github icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="See my graphic design work on Behance."
+                  href="https://www.behance.net/shanelbeebdfa9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/behance.svg" alt="behance icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="Connect with me on LinkedIn."
+                  href="https://www.linkedin.com/in/shanelbeebe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/linkedin.svg" alt="linkedIn icon"
+                /></a>
+              </li>
+              <li>
+                <a
+                  aria-label="Send me an email."
+                  href="mailto:hello@shanelbeebe.com"
+                  ><img src="./assets/envelope.svg" alt="email icon"
+                /></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- End of wrapper -->
+        <!-- Chevron to indicate user to scroll down -->
+        <div class="scrollIndicator">
+          <img
+            class="chevron"
+            src="./assets/chevron.png"
+            alt="three chevrons pointing down"
+          />
+        </div>
+      </div>
+      <!-- end of large wrapper -->
+    </header>
+
+    <main class="wrapper">
+      <section class="about" id="about">
+        <div class="aboutGraphic">
+          <img
+            class="aboutImg"
+            src="./assets/aboutImage.jpeg"
+            alt="Overhead view of a person typing on a laptop"
+          />
+          <div class="aboutImgOutline"></div>
+        </div>
+        <div class="aboutText">
+          <span class="accentLine"></span>
+          <h2>About Me</h2>
+          <p>
+            Hi! My name is Shanel Beebe. I am a front-end web developer and
+            graphic designer living in Toronto. I attended the web development
+            bootcamp at Juno College and I have a diploma in graphic design and
+            interactive media from Toronto Film School.
+          </p>
+          <p>
+            I enjoy coding, creating cool stuff, and learning new things! You
+            can check out my recent work in the projects section of this site.
+          </p>
+          <div class="buttons">
+            <a href=""><button class="aboutBtn">View Works</button></a>
+            <a href=""><button class="aboutBtn">Download CV</button></a>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="skillsHeading">
+          <span class="accentLine"></span>
+          <h2>My Toolbox</h2>
+        </div>
+        <ul class="skillLogos">
+          <li><img src="./assets/htmlLogo.png" alt="HTML logo" /></li>
+          <li><img src="./assets/cssLogo.png" alt="CSS logo" /></li>
+          <li><img src="./assets/sassLogo.png" alt="Sass logo" /></li>
+          <li><img src="./assets/jsLogo.png" alt="Javascript logo" /></li>
+          <li><img src="./assets/jqueryLogo.png" alt="jQuery Logo" /></li>
+          <li><img src="./assets/firebaseLogo.png" alt="Firebase logo" /></li>
+          <li><img src="./assets/reactLogo.png" alt="React logo" /></li>
+          <li class="fillerImg"><img src="" alt="" /></li>
+          <li>
+            <img src="./assets/accLogo.png" alt="Adobe Creative Cloud logo" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="projectsHeading">
+          <span class="accentLine"></span>
+          <h2>Web Development</h2>
+        </div>
+        <section class="webDev">
+          <div class="overlayContainer webDevImg1">
+            <img class="webDevImg1" src="./assets/deliciousMU.png" alt="" />
+            <div class="overlay">
+              <h3>Delicious</h3>
+              <p>Multi-page PSD conversion</p>
+              <p>HTML - Sass</p>
+              <div class="projectLinks">
+                <a
+                  href="https://shanelbb.github.io/shanel-beebe-project-two/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="projectsLink"
+                    src="./assets/external-link.svg"
+                    alt=""
+                  /> </a
+                ><a
+                  href="https://github.com/shanelbb/shanel-beebe-project-two"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="projectsLink" src="./assets/github.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="overlayContainer webDevImg2">
+            <img
+              class="webDevImg2"
+              src="./assets/guessThatColourMU.png"
+              alt=""
+            />
+            <div class="overlay">
+              <h3>Guess That Colour!</h3>
+              <p>Interactive guessing game</p>
+              <p>HTML - Sass - jQuery - API</p>
+              <div class="projectLinks">
+                <a
+                  href="https://shanelbb.github.io/shanelBeebeProjectThree/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="projectsLink"
+                    src="./assets/external-link.svg"
+                    alt=""
+                  /> </a
+                ><a
+                  href="https://github.com/shanelbb/shanelBeebeProjectThree"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="projectsLink" src="./assets/github.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="overlayContainer webDevImg3">
+            <img class="webDevImg3" src="./assets/potterQuizMU.png" alt="" />
+            <div class="overlay">
+              <h3>Harry Potter and the Chamber of Trivia</h3>
+              <p>Interactive quiz</p>
+              <p>HTML - CSS - jQuery</p>
+              <div class="projectLinks">
+                <a
+                  href="https://shanelbb.github.io/juno-js-project-1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="projectsLink"
+                    src="./assets/external-link.svg"
+                    alt=""
+                  /> </a
+                ><a
+                  href="https://github.com/shanelbb/juno-js-project-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="projectsLink" src="./assets/github.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="overlayContainer webDevImg4">
+            <img class="webDevImg4" src="./assets/noticeBoardMU.png" alt="" />
+            <div class="overlay">
+              <h3>Notice Board</h3>
+              <p>Public notes app</p>
+              <p>HTML - Sass - React - Firebase</p>
+              <div class="projectLinks">
+                <a
+                  href="https://shanelbb.github.io/noticeBoard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="projectsLink"
+                    src="./assets/external-link.svg"
+                    alt=""
+                  /> </a
+                ><a
+                  href="https://github.com/shanelbb/noticeBoard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="projectsLink" src="./assets/github.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

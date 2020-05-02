@@ -1,0 +1,139 @@
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.sbLogo {
+  max-height: 100%;
+  width: 75px;
+  height: 75px;
+}
+
+.menuIcon {
+  height: 35px;
+}
+
+.headerNav {
+  display: flex;
+  align-content: center;
+}
+
+// hamburger menu icon and checkbox hidden until screen <940px.
+input.toggle,
+label.toggle {
+  display: none;
+}
+
+label.toggle {
+  color: $black;
+  z-index: 6;
+  font-size: 3.5rem;
+}
+
+.headerNavList {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    align-self: center;
+    margin-left: 25px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: all 0.5s;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.headerLeft {
+  height: 70vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+span.accentLine {
+  display: inline-block;
+  width: 125px;
+  height: 30px;
+  border-top: 3px solid $primary;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.headerP {
+  font-size: 1.8rem;
+  color: $darkGrey;
+  padding: 40px 0;
+  font-weight: 500;
+}
+
+.socialNav {
+  display: flex;
+  padding-top: 40px;
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.headerRight {
+  position: absolute;
+  right: -75px;
+  bottom: -30px;
+
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.socialNavBtm {
+  display: none;
+  li {
+    margin: 30px 10px;
+
+    img {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.scrollIndicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 20px 0;
+}
+.chevron {
+  height: 20px;
+}
