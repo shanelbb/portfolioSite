@@ -416,6 +416,16 @@
   }
 }
 
+@media (max-width: 418px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutBtn {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 414px) {
   .headerBar {
     p {

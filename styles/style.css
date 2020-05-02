@@ -250,7 +250,6 @@ button {
   font-weight: 500;
   background-color: #ce9993;
   border-radius: 7px;
-  margin-right: 20px;
   padding: 8px 12px;
   width: 125px;
   -webkit-transition: all 0.5s;
@@ -513,6 +512,10 @@ h2 {
 
 .buttons {
   padding: 30px 0;
+}
+
+.aboutBtn {
+  margin-right: 20px;
 }
 
 .skills {
@@ -1051,6 +1054,21 @@ h3 {
   }
   .skillLogos li img {
     height: 125px;
+  }
+}
+
+@media (max-width: 418px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutBtn {
+    margin-right: 0;
   }
 }
 
