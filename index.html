@@ -8,6 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -44,7 +49,7 @@
             <span class="accentLine"></span>
             <h1>I'm Shanel</h1>
             <p class="headerP">Front-end Web Developer & Graphic Designer</p>
-            <a href="mailto:hello@shanelbeebe.com"
+            <a href="#contact"
               ><button class="headerBtn">Get In Touch</button></a
             >
             <!-- Social media links (display:none @ < 1024px as links move below image) -->
@@ -152,7 +157,7 @@
         <!-- Chevron to indicate user to scroll down -->
         <div class="scrollIndicator">
           <img
-            class="chevron"
+            class="chevron animated infinite pulse delay-1s"
             src="./assets/chevron.png"
             alt="three chevrons pointing down"
           />
@@ -163,7 +168,7 @@
 
     <main class="wrapper">
       <section class="about" id="about">
-        <div class="aboutGraphic">
+        <div class="aboutGraphic" data-aos="fade-right">
           <img
             class="aboutImg"
             src="./assets/aboutImage.jpeg"
@@ -171,7 +176,7 @@
           />
           <div class="aboutImgOutline"></div>
         </div>
-        <div class="aboutText">
+        <div class="aboutText" data-aos="fade-left">
           <span class="accentLine"></span>
           <h2>About Me</h2>
           <p>
@@ -193,11 +198,11 @@
         </div>
       </section>
       <section class="skills" id="skills">
-        <div class="skillsHeading">
+        <div class="skillsHeading" data-aos="fade-right">
           <span class="accentLine"></span>
           <h2>My Toolbox</h2>
         </div>
-        <ul class="skillLogos">
+        <ul class="skillLogos" data-aos="zoom-in">
           <div class="skill">
             <li><img src="./assets/htmlLogo.png" alt="HTML logo" /></li>
             <h3>HTML</h3>
@@ -240,12 +245,12 @@
       </section>
 
       <section class="webDevProjects" id="projects">
-        <div class="projectsHeading">
+        <div class="projectsHeading" data-aos="fade-down">
           <span class="accentLine"></span>
           <h2>Web Development</h2>
         </div>
         <section class="webDev">
-          <div class="overlayContainer webDevImg1">
+          <div class="overlayContainer webDevImg1" data-aos="fade-right">
             <img
               class="webDevImg1"
               src="./assets/deliciousMU.png"
@@ -277,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="overlayContainer webDevImg2">
+          <div class="overlayContainer webDevImg2" data-aos="fade-right">
             <img
               class="webDevImg2"
               src="./assets/guessThatColourMU.png"
@@ -309,7 +314,7 @@
               </div>
             </div>
           </div>
-          <div class="overlayContainer webDevImg3">
+          <div class="overlayContainer webDevImg3" data-aos="fade-left">
             <img
               class="webDevImg3"
               src="./assets/potterQuizMU.png"
@@ -341,7 +346,7 @@
               </div>
             </div>
           </div>
-          <div class="overlayContainer webDevImg4">
+          <div class="overlayContainer webDevImg4" data-aos="fade-left">
             <img
               class="webDevImg4"
               src="./assets/noticeBoardMU.png"
@@ -376,12 +381,12 @@
         </section>
       </section>
       <section class="graphicDesignProjects">
-        <div class="projectsHeading">
+        <div class="projectsHeading" data-aos="fade-down">
           <span class="accentLine"></span>
           <h2>Graphic Design</h2>
         </div>
         <section class="graphicDesign">
-          <div class="overlayContainer graphicImg1">
+          <div class="overlayContainer graphicImg1" data-aos="fade-right">
             <img
               class="graphicImg1"
               src="./assets/logosMU.png"
@@ -392,7 +397,7 @@
               <p>Adobe Illustrator</p>
             </div>
           </div>
-          <div class="overlayContainer graphicImg2">
+          <div class="overlayContainer graphicImg2" data-aos="fade-left">
             <img
               class="graphicImg2"
               src="./assets/brandingMU.png"
@@ -403,7 +408,7 @@
               <p>Adobe Illustrator & InDesign</p>
             </div>
           </div>
-          <div class="overlayContainer graphicImg3">
+          <div class="overlayContainer graphicImg3" data-aos="fade-right">
             <img
               class="graphicImg3"
               src="./assets/pageLayoutMU.png"
@@ -414,7 +419,7 @@
               <p>Adobe Photoshop & InDesign</p>
             </div>
           </div>
-          <div class="overlayContainer graphicImg4">
+          <div class="overlayContainer graphicImg4" data-aos="fade-left">
             <img
               class="graphicImg4"
               src="./assets/photoManipMU.png"
@@ -429,7 +434,7 @@
       </section>
 
       <section class="contactContainer" id="contact">
-        <div class="contactGraphic">
+        <div class="contactGraphic" data-aos="fade-right">
           <img
             class="contactImg"
             src="./assets/contactImage.jpg"
@@ -437,7 +442,7 @@
           />
           <div class="contactImgOutline"></div>
         </div>
-        <div class="contact">
+        <div class="contact" data-aos="fade-left">
           <div class="contactHeading">
             <span class="accentLine"></span>
             <h2>Get In Touch</h2>
@@ -540,5 +545,10 @@
         <span class="accentLine accentLineFooterBottom"></span>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

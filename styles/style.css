@@ -823,6 +823,15 @@ textarea {
   margin: 0 10px;
 }
 
+.footerNav li a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footerNav li a:hover {
+  color: #ce9993;
+}
+
 .footerSocial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,6 +843,13 @@ textarea {
   width: 15px;
   height: 15px;
   margin-left: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footerSocial img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 span.accentLineFooterMiddle {

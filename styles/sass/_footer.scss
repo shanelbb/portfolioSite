@@ -27,6 +27,12 @@
 
 .footerNav li {
   margin: 0 10px;
+  a {
+    transition: all 0.5s;
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 .footerSocial {
@@ -37,6 +43,10 @@
     width: 15px;
     height: 15px;
     margin-left: 15px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
