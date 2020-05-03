@@ -1,24 +1,18 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
+
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+    $mailFrom = $_POST['email'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $email_from = 'hello@shanelbeebe.com';
-    $email_subject = "New Form Submission";
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                        "User Subject: $subject.\n".
-                            "User Message: $message.\n";
-    
-    $to = "shanelbeebe@icloud.com";
+    $mailTo = "hello@shanelbeebe.com";
+    $headers = "From: ".$mailFrom;
+    $txt = "You have received and email from ".$name.".\n\n".$message;
 
-    $headers = "From: $email_from \r\n";
+    mail($mailTo, $subject, $txt, $headers);
 
-    $headers .= "Reply-To: $visitor_email \r\n";
+    header("Location: index.php?mailsend");
 
-    mail($to,$email_subject,$email_body,$headers);
-
-    header('Location: index.html');
-
+    }
 ?>

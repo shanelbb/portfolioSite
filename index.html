@@ -448,8 +448,8 @@
             <h2>Get In Touch</h2>
           </div>
           <form
-            id="contact-form"
-            method="POST"
+            id="contactForm"
+            method="post"
             action="contactFormHandler.php"
             class="contactForm"
           >
@@ -493,7 +493,9 @@
                 maxlength="500"
               ></textarea>
             </div>
-            <input type="submit" class="formControl" value="Send Message" />
+            <button type="submit" name="submit" class="formControl">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
