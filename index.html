@@ -450,7 +450,7 @@
           <form
             id="contact-form"
             method="POST"
-            action="contact-form-handler.php"
+            action="contactFormHandler.php"
             class="contactForm"
           >
             <div class="userInputs">
@@ -458,7 +458,7 @@
               <input
                 name="name"
                 type="text"
-                class="form-control"
+                class="formControl"
                 id="name"
                 placeholder="Name"
                 required
@@ -467,7 +467,7 @@
               <input
                 name="email"
                 type="email"
-                class="form-control"
+                class="formControl"
                 id="email"
                 placeholder="Email Address"
                 required
@@ -476,7 +476,7 @@
               <input
                 name="subject"
                 type="text"
-                class="form-control"
+                class="formControl"
                 id="subject"
                 placeholder="Subject"
               />
@@ -485,7 +485,7 @@
               <label for="message" class="visuallyHidden">Message</label>
               <textarea
                 name="message"
-                class="form-control"
+                class="formControl"
                 placeholder="Message"
                 id="message"
                 cols="30"
@@ -493,7 +493,7 @@
                 maxlength="500"
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <input type="submit" class="formControl" value="Send Message" />
           </form>
         </div>
       </section>
