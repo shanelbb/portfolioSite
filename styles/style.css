@@ -1226,11 +1226,18 @@ span.accentLineFooterMiddle {
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
     margin-bottom: 20px;
+  }
+  .userInputs {
+    width: 100%;
   }
   .contactForm input {
     margin: 0 0 20px 0;
     width: 100%;
+  }
+  .contactForm button {
+    margin-top: 20px;
   }
 }
 

@@ -447,21 +447,36 @@
             <span class="accentLine"></span>
             <h2>Get In Touch</h2>
           </div>
-          <form action="" class="contactForm">
+          <form
+            id="contact-form"
+            method="POST"
+            action="contact-form-handler.php"
+            class="contactForm"
+          >
             <div class="userInputs">
               <label for="name" class="visuallyHidden">Name</label>
-              <input type="text" class="name" id="name" placeholder="Name" />
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+                required
+              />
               <label for="email" class="visuallyHidden">Email Address</label>
               <input
-                type="text"
-                class="email"
+                name="email"
+                type="email"
+                class="form-control"
                 id="email"
                 placeholder="Email Address"
+                required
               />
               <label for="subject" class="visuallyHidden">Subject</label>
               <input
+                name="subject"
                 type="text"
-                class="subject"
+                class="form-control"
                 id="subject"
                 placeholder="Subject"
               />
@@ -469,16 +484,17 @@
             <div class="userMessage">
               <label for="message" class="visuallyHidden">Message</label>
               <textarea
-                class="message"
                 name="message"
+                class="form-control"
                 placeholder="Message"
                 id="message"
                 cols="30"
                 rows="10"
+                maxlength="500"
               ></textarea>
             </div>
+            <button type="submit">Send Message</button>
           </form>
-          <button>Send Message</button>
         </div>
       </section>
     </main>
