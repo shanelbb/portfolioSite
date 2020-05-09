@@ -55,29 +55,29 @@
   }
 }
 
-.gallery1 {
+#gallery1 {
   height: 450px;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.gallery2 {
+#gallery2 {
   height: 215px;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 
-.gallery3,
-.gallery4 {
+#gallery3,
+#gallery4 {
   height: 215px;
 }
 
-.gallery5 {
+#gallery5 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.gallery5,
-.gallery6 {
+#gallery5,
+#gallery6 {
   height: 215px;
 }
