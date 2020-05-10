@@ -907,14 +907,12 @@ span.accentLineFooterMiddle {
 .projectsList ul li {
   margin: 0 15px;
   font-weight: 500;
-}
-
-.projectsList ul li a {
+  cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.projectsList ul li a:hover {
+.projectsList ul li:hover {
   color: #ce9993;
 }
 
@@ -932,6 +930,10 @@ span.accentLineFooterMiddle {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.layout {
+  border: 2px solid #ce9993;
 }
 
 #gallery1 {

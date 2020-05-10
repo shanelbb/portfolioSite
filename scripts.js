@@ -10,9 +10,9 @@ const app = {};
 $("#logos").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
-    ` <img id="gallery1" class="galleryImg" src="./assets/brandingMU.jpg" alt="" tabIndex="0"/>
-        <img id="gallery2" class="galleryImg" src="./assets/pageLayoutMU.jpg" alt="" tabIndex="0"/>
-        <img id="gallery3" class="galleryImg" src="./assets/photoManipMU.jpg" alt="" tabIndex="0"/>
+    ` <img id="gallery1" class="galleryImg" src="./assets/flintFlameMU.jpg" alt="" tabIndex="0"/>
+        <img id="gallery2" class="galleryImg" src="./assets/autonomeMU.jpg" alt="" tabIndex="0"/>
+        <img id="gallery3" class="galleryImg" src="./assets/logosPage.jpg" alt="" tabIndex="0"/>
         <img id="gallery4" class="galleryImg" src="./assets/logosMU.jpg" alt="" />
         <img id="gallery5" class="galleryImg" src="./assets/noticeBoardMU.jpg" alt="" tabIndex="0"/>
         <img id="gallery6" class="galleryImg" src="./assets/guessThatColourMU.jpg" alt="" tabIndex="0"/>`
@@ -22,30 +22,30 @@ $("#logos").on("click", (e) => {
 $("#branding").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
-    `<img id="gallery1" class="galleryImg" src="./assets/brandingMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery2" class="galleryImg" src="./assets/pageLayoutMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery3" class="galleryImg" src="./assets/photoManipMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery4" class="galleryImg" src="./assets/logosMU.jpg" alt="" tabIndex="0"/>`
+    `<img id="gallery1" class="galleryImg" src="./assets/artHouseMU.jpg" alt="" tabIndex="0"/>
+          <img id="gallery2" class="galleryImg" src="./assets/artHouseTheatreMU" alt="" tabIndex="0"/>
+          <img id="gallery3" class="galleryImg" src="./assets/liftBusCardMU.jpg" alt="" tabIndex="0"/>
+          <img id="gallery4" class="galleryImg" src="./assets/liftPhoneCaseMU.jpg" alt="" tabIndex="0"/>`
   );
 });
 
 $("#layout").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
-    `<img id="gallery1" class="galleryImg" src="./assets/brandingMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery2" class="galleryImg" src="./assets/pageLayoutMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery3" class="galleryImg" src="./assets/photoManipMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery4" class="galleryImg" src="./assets/logosMU.jpg" alt="" tabIndex="0"/>`
+    `<img id="gallery1" class="galleryImg layout" src="./assets/nationMU.jpg" alt="" tabIndex="0"/>
+          <img id="gallery2" class="galleryImg layout" src="./assets/aliceMU.jpg" alt="" tabIndex="0"/>
+          <img id="gallery3" class="galleryImg layout" src="./assets/powwowMU.jpg" alt="" tabIndex="0"/>
+          <img id="gallery4" class="galleryImg layout" src="./assets/natlReportMU.jpg" alt="" tabIndex="0"/>`
   );
 });
 
 $("#photoshop").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
-    `<img id="gallery1" class="galleryImg" src="./assets/brandingMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery2" class="galleryImg" src="./assets/pageLayoutMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery3" class="galleryImg" src="./assets/photoManipMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery4" class="galleryImg" src="./assets/logosMU.jpg" alt="" tabIndex="0"/>`
+    `<img id="gallery1" class="galleryImg" src="./assets/dblExpBeach.jpg" alt="" tabIndex="0"/>
+          <img id="gallery2" class="galleryImg" src="./assets/smokeEffectHair.jpg" alt="" tabIndex="0"/>
+          <img id="gallery3" class="galleryImg" src="./assets/dblExpBirds.jpg" alt="" tabIndex="0"/>
+          <img id="gallery4" class="galleryImg" src="./assets/smokeEffectDancer.jpg" alt="" tabIndex="0"/>`
   );
 });
 

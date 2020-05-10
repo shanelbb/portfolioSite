@@ -30,13 +30,11 @@
     li {
       margin: 0 15px;
       font-weight: 500;
+      cursor: pointer;
+      transition: all 0.5s;
 
-      a {
-        transition: all 0.5s;
-
-        &:hover {
-          color: $primary;
-        }
+      &:hover {
+        color: $primary;
       }
     }
   }
@@ -53,6 +51,10 @@
     object-fit: cover;
     border-radius: 10px;
   }
+}
+
+.layout {
+  border: 2px solid $primary;
 }
 
 #gallery1 {
