@@ -244,6 +244,11 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
 button {
   border: 2px solid transparent;
   font-size: 1.4rem;
@@ -451,11 +456,6 @@ h1 {
   height: 20px;
 }
 
-h2 {
-  font-weight: 600;
-  font-size: 2.4rem;
-}
-
 .about {
   margin: 100px 0;
   display: -webkit-box;
@@ -657,7 +657,7 @@ h2 {
   transition: all 0.5s;
 }
 
-.overlay:hover {
+.overlay:hover, .overlay:focus {
   -webkit-filter: opacity(100%);
           filter: opacity(100%);
 }
