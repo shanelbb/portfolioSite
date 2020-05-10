@@ -1,0 +1,118 @@
+@media (max-width: 1024px) {
+  .projectsList {
+    ul {
+      width: 100%;
+    }
+  }
+
+  .projectsGallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #gallery1 {
+    height: 215px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #gallery2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #gallery5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (max-width: 664px) {
+  .projectsList {
+    margin-bottom: 10px;
+    ul {
+      background-color: transparent;
+      height: auto;
+      margin-bottom: 15px;
+
+      li {
+        background-color: $secondary;
+        border-radius: 7px;
+        width: 150px;
+        text-align: center;
+        padding: 10px 15px;
+        margin: 0 15px 15px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .projectsGallery {
+    grid-template-columns: 1fr;
+  }
+
+  #gallery2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #gallery1,
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5,
+  #gallery6 {
+    height: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  #gallery1,
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5,
+  #gallery6 {
+    height: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .projectsH1 {
+    font-size: 4rem;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 490px) {
+  #gallery1,
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5,
+  #gallery6 {
+    height: 250px;
+  }
+}
+
+@media (max-width: 414px) {
+  .projectsH1 {
+    line-height: 1.4;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  #gallery1,
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5,
+  #gallery6 {
+    height: 200px;
+  }
+}

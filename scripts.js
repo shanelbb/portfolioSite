@@ -23,9 +23,9 @@ $("#branding").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
     `<img id="gallery1" class="galleryImg" src="./assets/artHouseMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery2" class="galleryImg" src="./assets/artHouseTheatreMU" alt="" tabIndex="0"/>
-          <img id="gallery3" class="galleryImg" src="./assets/liftBusCardMU.jpg" alt="" tabIndex="0"/>
-          <img id="gallery4" class="galleryImg" src="./assets/liftPhoneCaseMU.jpg" alt="" tabIndex="0"/>`
+            <img id="gallery2" class="galleryImg" src="./assets/artHouseTheatreMU" alt="" tabIndex="0"/>
+            <img id="gallery3" class="galleryImg" src="./assets/liftBusCardMU.jpg" alt="" tabIndex="0"/>
+            <img id="gallery4" class="galleryImg" src="./assets/liftPhoneCaseMU.jpg" alt="" tabIndex="0"/>`
   );
 });
 
