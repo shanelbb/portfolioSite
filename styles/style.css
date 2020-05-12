@@ -1596,6 +1596,19 @@ figure {
   .headerBar p {
     font-size: 1.4rem;
   }
+  .headerButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerButtons a:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
   .headerRight img {
     width: 250px;
     height: 250px;

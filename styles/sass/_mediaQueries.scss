@@ -580,6 +580,16 @@
     }
   }
 
+  .headerButtons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerButtons a:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
   .headerRight {
     img {
       width: 250px;
