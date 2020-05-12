@@ -591,7 +591,7 @@ span.accentLineBelow {
 }
 
 .webDevImg1 {
-  width: 350px;
+  width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -601,10 +601,14 @@ span.accentLineBelow {
   border-radius: 5px;
 }
 
-.webDevImg2 {
+.webDevImg2,
+.webDevImg3,
+.webDevImg4 {
+  height: 240px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .description1,
@@ -625,20 +629,7 @@ span.accentLineBelow {
   grid-row-end: 5;
 }
 
-.webDevImg2,
-.webDevImg3 {
-  height: 240px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-}
-
 .webDevImg4 {
-  height: 240px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
@@ -1021,14 +1012,16 @@ span.accentLineFooterMiddle {
 }
 
 #gallery2 {
-  height: 215px;
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
 }
 
+#gallery2,
 #gallery3,
-#gallery4 {
+#gallery4,
+#gallery5,
+#gallery6 {
   height: 215px;
 }
 
@@ -1036,11 +1029,6 @@ span.accentLineFooterMiddle {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-}
-
-#gallery5,
-#gallery6 {
-  height: 215px;
 }
 
 .modal {
@@ -1115,11 +1103,8 @@ figure {
 }
 
 @media (min-width: 3500px) {
-  .largeWrapper {
+  .largeWrapper .footerLargeWrapper {
     max-width: 2500px;
-  }
-  .wrapper {
-    max-width: 2000px;
   }
   .headerBar p {
     font-size: 3.5rem;
@@ -1138,18 +1123,29 @@ figure {
     width: 225px;
     padding: 16px;
   }
+  .headerRight {
+    height: auto;
+    margin-top: 100px;
+  }
   .headerRight img {
     width: 650px;
     height: 650px;
+  }
+  .contactImg {
+    width: 450px;
+  }
+  .contactForm input {
+    width: 95%;
   }
 }
 
 @media (min-width: 2520px) {
   .largeWrapper {
-    height: 65vh;
+    height: auto;
   }
   .headerLeft {
-    height: 50vh;
+    height: auto;
+    margin-top: 300px;
   }
 }
 
@@ -1807,6 +1803,19 @@ figure {
   .headerRight img {
     width: 225px;
     height: 225px;
+  }
+}
+
+@media (min-width: 3500px) {
+  #gallery1 {
+    height: 620px;
+  }
+  #gallery2,
+  #gallery3,
+  #gallery4,
+  #gallery5,
+  #gallery6 {
+    height: 300px;
   }
 }
 

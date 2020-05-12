@@ -1,10 +1,6 @@
 @media (min-width: 3500px) {
-  .largeWrapper {
+  .largeWrapper .footerLargeWrapper {
     max-width: 2500px;
-  }
-
-  .wrapper {
-    max-width: 2000px;
   }
 
   .headerBar {
@@ -32,20 +28,31 @@
   }
 
   .headerRight {
+    height: auto;
+    margin-top: 100px;
     img {
       width: 650px;
       height: 650px;
     }
   }
+
+  .contactImg {
+    width: 450px;
+  }
+
+  .contactForm input {
+    width: 95%;
+  }
 }
 
 @media (min-width: 2520px) {
   .largeWrapper {
-    height: 65vh;
+    height: auto;
   }
 
   .headerLeft {
-    height: 50vh;
+    height: auto;
+    margin-top: 300px;
   }
 }
 

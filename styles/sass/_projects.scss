@@ -17,7 +17,7 @@
 }
 
 .webDevImg1 {
-  width: 350px;
+  width: 100%;
   height: 500px;
   object-fit: cover;
   grid-row-start: 1;
@@ -25,9 +25,13 @@
   border-radius: 5px;
 }
 
-.webDevImg2 {
+.webDevImg2,
+.webDevImg3,
+.webDevImg4 {
+  height: 240px;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .description1,
@@ -44,18 +48,8 @@
   grid-row-start: 3;
   grid-row-end: 5;
 }
-.webDevImg2,
-.webDevImg3 {
-  height: 240px;
-  object-fit: cover;
-  border-radius: 5px;
-}
 
 .webDevImg4 {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5px;
   grid-column-start: 2;
   grid-column-end: 4;
 }
