@@ -49,9 +49,15 @@
             <span class="accentLine"></span>
             <h1>I'm Shanel</h1>
             <p class="headerP">Front-end Web Developer & Graphic Designer</p>
-            <a href="#contact"
-              ><button class="headerBtn">Get In Touch</button></a
-            >
+            <div class="headerButtons">
+              <a href="#projects"
+                ><button class="headerBtn">View Work</button></a
+              >
+              <a href="#contact"
+                ><button class="headerBtn">Get In Touch</button></a
+              >
+            </div>
+            <!-- <span class="accentLine accentLineBottom"></span> -->
             <!-- Social media links (display:none @ < 1024px as links move below image) -->
             <ul class="socialNav">
               <li>
@@ -105,6 +111,9 @@
               src="./assets/selfPortrait.png"
               alt="illustrated self portrait"
             />
+            <!-- <div class="accentLineBelow">
+              <span class="accentLine accentLineBelow"></span>
+            </div> -->
             <!-- display:none when screen width is >1024px -->
             <ul class="socialNavBtm">
               <li>
@@ -266,12 +275,16 @@
                   tabindex="0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  ><img
+                >
+                  <img
                     class="projectsLink"
                     src="./assets/external-link.svg"
                     alt="External link icon"
-                  /> </a
-                ><a
+                  />
+                  <p>Live</p>
+                </a>
+
+                <a
                   href="https://github.com/shanelbb/shanel-beebe-project-two"
                   tabindex="0"
                   target="_blank"
@@ -280,7 +293,9 @@
                     class="projectsLink"
                     src="./assets/github.svg"
                     alt="Github link icon"
-                /></a>
+                  />
+                  <p>Github</p>
+                </a>
               </div>
             </div>
           </div>
@@ -303,7 +318,8 @@
                     class="projectsLink"
                     src="./assets/external-link.svg"
                     alt="External link icon."
-                  /> </a
+                  />
+                  <p>Live</p> </a
                 ><a
                   href="https://github.com/shanelbb/shanelBeebeProjectThree"
                   target="_blank"
@@ -312,7 +328,9 @@
                     class="projectsLink"
                     src="./assets/github.svg"
                     alt="Github link icon"
-                /></a>
+                  />
+                  <p>Github</p>
+                </a>
               </div>
             </div>
           </div>
@@ -335,8 +353,10 @@
                     class="projectsLink"
                     src="./assets/external-link.svg"
                     alt="External link icon"
-                  /> </a
-                ><a
+                  />
+                  <p>Live</p>
+                </a>
+                <a
                   href="https://github.com/shanelbb/juno-js-project-1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -344,7 +364,9 @@
                     class="projectsLink"
                     src="./assets/github.svg"
                     alt="Github link icon"
-                /></a>
+                  />
+                  <p>Github</p>
+                </a>
               </div>
             </div>
           </div>
@@ -358,7 +380,7 @@
               <h3>Notice Board</h3>
               <p>Public notes app</p>
               <p>HTML - Sass - React - Firebase</p>
-              <div class="projectsLinks">
+              <div class="projectLinks">
                 <a
                   href="https://shanelbb.github.io/noticeBoard/"
                   target="_blank"
@@ -367,7 +389,8 @@
                     class="projectsLink"
                     src="./assets/external-link.svg"
                     alt="External link icon"
-                  /> </a
+                  />
+                  <p>Live</p> </a
                 ><a
                   href="https://github.com/shanelbb/noticeBoard"
                   target="_blank"
@@ -376,7 +399,9 @@
                     class="projectsLink"
                     src="./assets/github.svg"
                     alt="Github link icon"
-                /></a>
+                  />
+                  <p>Github</p>
+                </a>
               </div>
             </div>
           </div>
@@ -402,7 +427,9 @@
                   class="projectsLink"
                   src="./assets/external-link.svg"
                   alt="external link icon"
-              /></a>
+                />
+                <p>See Design Projects</p>
+              </a>
             </div>
           </div>
           <div class="overlayContainer graphicImg2" data-aos="zoom-in">
@@ -420,6 +447,7 @@
                   src="./assets/external-link.svg"
                   alt="external link icon"
                 />
+                <p>See Design Projects</p>
               </a>
             </div>
           </div>
@@ -437,7 +465,9 @@
                   class="projectsLink"
                   src="./assets/external-link.svg"
                   alt="external link icon"
-              /></a>
+                />
+                <p>See Design Projects</p>
+              </a>
             </div>
           </div>
           <div class="overlayContainer graphicImg4" data-aos="zoom-in">
@@ -454,7 +484,9 @@
                   class="projectsLink"
                   src="./assets/external-link.svg"
                   alt="external link icon"
-              /></a>
+                />
+                <p>See Design Projects</p>
+              </a>
             </div>
           </div>
         </section>
@@ -476,8 +508,8 @@
           </div>
           <form
             id="contactForm"
-            method="post"
-            action="contactFormHandler.php"
+            method="POST"
+            action="https://formspree.io/xqkyadel"
             class="contactForm"
           >
             <div class="userInputs">
@@ -492,7 +524,7 @@
               />
               <label for="email" class="visuallyHidden">Email Address</label>
               <input
-                name="email"
+                name="_replyto"
                 type="email"
                 class="formControl"
                 id="email"
@@ -520,7 +552,12 @@
                 maxlength="500"
               ></textarea>
             </div>
-            <button type="submit" name="submit" class="formControl">
+            <button
+              type="submit"
+              name="submit"
+              value="send"
+              class="formControl"
+            >
               Send Message
             </button>
           </form>

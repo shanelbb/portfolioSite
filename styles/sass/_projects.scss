@@ -90,9 +90,14 @@
   }
 }
 
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
 .projectsLink {
   height: 20px;
-  margin: 10px;
+  margin: 20px 20px 0 20px;
   transition: all 0.3s;
   &:hover,
   &:focus {

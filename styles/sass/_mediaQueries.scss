@@ -137,6 +137,10 @@
     }
   }
 
+  .aboutImgOutline {
+    width: 300px;
+  }
+
   .webDevImg1 {
     width: 250px;
     height: 450px;
@@ -187,17 +191,22 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  .contactGraphic {
-    display: none;
-  }
 
   .contact {
-    width: 100%;
-    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .contactForm {
+    grid-template-columns: 1fr;
   }
 
   .contactForm input {
-    width: 95%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .userMessage {
+    margin-bottom: 20px;
   }
 }
 
@@ -221,6 +230,12 @@
       width: 375px;
       height: 375px;
     }
+  }
+
+  .contactImgOutline {
+    left: -30px;
+    top: 30px;
+    width: 225px;
   }
 
   .footerText {
@@ -279,6 +294,20 @@
     justify-content: center;
   }
 
+  // span.accentLineBottom {
+  //   display: none;
+  // }
+
+  // .accentLineBelow {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  // span.accentLineBelow {
+  //   display: block;
+  //   margin: 20px 0;
+  // }
+
   .scrollIndicator {
     display: none;
   }
@@ -286,6 +315,10 @@
   .about {
     flex-direction: column;
     align-items: center;
+  }
+
+  .aboutImgOutline {
+    width: 350px;
   }
 
   .aboutText {
@@ -382,10 +415,17 @@
   }
 
   .contactForm {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin-bottom: 20px;
+  }
+
+  .contactGraphic {
+    display: none;
+  }
+
+  .contact {
+    width: 100%;
+    margin-left: 0;
   }
 
   .userInputs {
@@ -432,10 +472,15 @@
     padding-bottom: 20px;
   }
 
+  .headerLeft {
+    height: auto;
+    margin-top: 100px;
+  }
+
   .headerRight {
     bottom: -40px;
     img {
-      height: 350px;
+      height: auto;
       width: 350px;
     }
   }

@@ -261,7 +261,7 @@ button {
   transition: all 0.5s;
 }
 
-button:hover {
+button:hover, button:focus {
   border: 2px solid #ce9993;
   background-color: transparent;
 }
@@ -386,6 +386,18 @@ h1 {
   color: #5e5c5d;
   padding: 40px 0;
   font-weight: 500;
+}
+
+.headerButtons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.accentLineBottom {
+  margin-top: 40px;
+}
+
+span.accentLineBelow {
+  display: none;
 }
 
 .socialNav {
@@ -667,9 +679,18 @@ h1 {
   margin: 10px;
 }
 
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .projectsLink {
   height: 20px;
-  margin: 10px;
+  margin: 20px 20px 0 20px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1150,6 +1171,9 @@ figure {
     width: 400px;
     height: 400px;
   }
+  .aboutImgOutline {
+    width: 300px;
+  }
   .webDevImg1 {
     width: 250px;
     height: 450px;
@@ -1199,15 +1223,19 @@ figure {
     text-align: center;
     margin-bottom: 50px;
   }
-  .contactGraphic {
-    display: none;
-  }
   .contact {
-    width: 100%;
-    margin-left: 0;
+    margin-top: 0;
+  }
+  .contactForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .contactForm input {
-    width: 95%;
+    width: 100%;
+    margin-right: 0;
+  }
+  .userMessage {
+    margin-bottom: 20px;
   }
 }
 
@@ -1224,6 +1252,11 @@ figure {
   .headerRight img {
     width: 375px;
     height: 375px;
+  }
+  .contactImgOutline {
+    left: -30px;
+    top: 30px;
+    width: 225px;
   }
   .footerText {
     -webkit-box-orient: vertical;
@@ -1305,6 +1338,9 @@ figure {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .aboutImgOutline {
+    width: 350px;
   }
   .aboutText {
     -webkit-box-ordinal-group: 0;
@@ -1410,12 +1446,15 @@ figure {
             align-items: center;
   }
   .contactForm {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     margin-bottom: 20px;
+  }
+  .contactGraphic {
+    display: none;
+  }
+  .contact {
+    width: 100%;
+    margin-left: 0;
   }
   .userInputs {
     width: 100%;
@@ -1456,11 +1495,15 @@ figure {
     height: auto;
     padding-bottom: 20px;
   }
+  .headerLeft {
+    height: auto;
+    margin-top: 100px;
+  }
   .headerRight {
     bottom: -40px;
   }
   .headerRight img {
-    height: 350px;
+    height: auto;
     width: 350px;
   }
 }
