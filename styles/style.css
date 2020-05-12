@@ -548,7 +548,7 @@ span.accentLineBelow {
 }
 
 .skillLogos li img {
-  height: 150px;
+  height: 100px;
 }
 
 .skill {
@@ -1498,6 +1498,10 @@ figure {
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
+  .skillLogos {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
   .webDev,
   .graphicDesign {
     -ms-grid-columns: 1fr;
@@ -1592,6 +1596,13 @@ figure {
   }
 }
 
+@media (max-width: 768px) {
+  .skillLogos {
+    -ms-grid-columns: (minmax(125px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  }
+}
+
 @media (max-width: 700px) {
   .webDevImg1,
   .webDevImg2,
@@ -1660,10 +1671,6 @@ figure {
 }
 
 @media (max-width: 535px) {
-  .skillLogos {
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
   .webDevImg1,
   .webDevImg2,
   .webDevImg3,
@@ -1705,11 +1712,8 @@ figure {
     height: 325px;
   }
   .skillLogos {
-    -ms-grid-columns: (minmax(125px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-  }
-  .skillLogos li img {
-    height: 125px;
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 
@@ -1783,14 +1787,6 @@ figure {
     left: -20px;
     top: 20px;
   }
-  .skillLogos {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-  }
-  .skillLogos li img {
-    height: 100px;
-  }
 }
 
 @media (max-width: 350px) {
@@ -1803,6 +1799,10 @@ figure {
   .headerRight img {
     width: 225px;
     height: 225px;
+  }
+  .skillLogos {
+    -ms-grid-columns: (minmax(90px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
 }
 

@@ -417,6 +417,10 @@
     transition: all 0.7s;
   }
 
+  .skillLogos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
   .webDev,
   .graphicDesign {
     grid-template-columns: 1fr;
@@ -517,6 +521,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .skillLogos {
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  }
+}
+
 @media (max-width: 700px) {
   .webDevImg1,
   .webDevImg2,
@@ -596,10 +606,6 @@
 }
 
 @media (max-width: 535px) {
-  .skillLogos {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
   .webDevImg1,
   .webDevImg2,
   .webDevImg3,
@@ -642,10 +648,7 @@
   }
 
   .skillLogos {
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-  }
-  .skillLogos li img {
-    height: 125px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 
@@ -719,14 +722,6 @@
     left: -20px;
     top: 20px;
   }
-
-  .skillLogos {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-  }
-  .skillLogos li img {
-    height: 100px;
-  }
 }
 
 @media (max-width: 350px) {
@@ -745,5 +740,9 @@
       width: 225px;
       height: 225px;
     }
+  }
+
+  .skillLogos {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
 }
