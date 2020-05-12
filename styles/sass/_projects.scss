@@ -25,6 +25,25 @@
   border-radius: 5px;
 }
 
+.webDevImg2 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.description1,
+.description2,
+.description4 {
+  height: 240px;
+}
+.description2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.description3 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
 .webDevImg2,
 .webDevImg3 {
   height: 240px;
@@ -56,6 +75,20 @@
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
+}
+
+.projDescription {
+  background: linear-gradient(to top, $primary, $secondary);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
 }
 
 .overlayContainer {
