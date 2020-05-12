@@ -10,12 +10,12 @@ const app = {};
 $("#logos").on("click", (e) => {
   e.preventDefault();
   $(".projectsGallery").html(
-    ` <img id="gallery1" class="galleryImg" src="./assets/flintFlameMU.jpg" alt="" tabIndex="0"/>
+    ` <img id="gallery1" class="galleryImg" src="./assets/floataMU.jpg" alt="" tabIndex="0"/>
         <img id="gallery2" class="galleryImg" src="./assets/autonomeMU.jpg" alt="" tabIndex="0"/>
         <img id="gallery3" class="galleryImg" src="./assets/logosPage.jpg" alt="" tabIndex="0"/>
-        <img id="gallery4" class="galleryImg" src="./assets/logosMU.jpg" alt="" />
-        <img id="gallery5" class="galleryImg" src="./assets/noticeBoardMU.jpg" alt="" tabIndex="0"/>
-        <img id="gallery6" class="galleryImg" src="./assets/guessThatColourMU.jpg" alt="" tabIndex="0"/>`
+        <img id="gallery4" class="galleryImg" src="./assets/dnaMU.jpg" alt="" />
+        <img id="gallery5" class="galleryImg" src="./assets/clothMU.jpg" alt="" tabIndex="0"/>
+        <img id="gallery6" class="galleryImg" src="./assets/flintFlameMU.jpg" alt="" tabIndex="0"/>`
   );
 });
 
@@ -25,7 +25,10 @@ $("#branding").on("click", (e) => {
     `<img id="gallery1" class="galleryImg" src="./assets/artHouseMU.jpg" alt="" tabIndex="0"/>
             <img id="gallery2" class="galleryImg" src="./assets/artHouseTheatreMU" alt="" tabIndex="0"/>
             <img id="gallery3" class="galleryImg" src="./assets/liftBusCardMU.jpg" alt="" tabIndex="0"/>
-            <img id="gallery4" class="galleryImg" src="./assets/liftPhoneCaseMU.jpg" alt="" tabIndex="0"/>`
+            <img id="gallery4" class="galleryImg" src="./assets/liftPhoneCaseMU.jpg" alt="" tabIndex="0"/>
+            <img id="gallery5" class="galleryImg" src="./assets/prattNormanMU.jpg" alt="" tabIndex="0"/>
+        <img id="gallery6" class="galleryImg" src="./assets/prattBusCardMU.jpg" alt="" tabIndex="0"/>
+            `
   );
 });
 
