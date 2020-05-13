@@ -45,11 +45,13 @@ label.toggle {
     margin-left: 25px;
     font-size: 1.8rem;
     font-weight: 500;
-    transition: all 0.5s;
+    a {
+      transition: all 0.5s;
 
-    &:hover,
-    &:focus {
-      color: $primary;
+      &:hover,
+      &:focus {
+        color: $tertiary;
+      }
     }
   }
 }

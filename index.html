@@ -38,11 +38,11 @@
           </label>
           <input type="checkbox" id="toggle" class="toggle" />
           <ul class="headerNavList">
-            <a href="#home"><li>Home</li></a>
-            <a href="#about"><li>About</li></a>
-            <a href="#skills"><li>Skills</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- <p>Portfolio Coming Soon!</p> -->
@@ -63,7 +63,6 @@
                 ><button class="headerBtn">Get In Touch</button></a
               >
             </div>
-            <!-- <span class="accentLine accentLineBottom"></span> -->
             <!-- Social media links (display:none @ < 1024px as links move below image) -->
             <ul class="socialNav">
               <li>
@@ -121,9 +120,7 @@
               src="./assets/selfPortrait.png"
               alt="illustrated self portrait"
             />
-            <!-- <div class="accentLineBelow">
-              <span class="accentLine accentLineBelow"></span>
-            </div> -->
+
             <!-- display:none when screen width is >1024px -->
             <ul class="socialNavBtm">
               <li>
@@ -179,11 +176,13 @@
         <!-- End of wrapper -->
         <!-- Chevron to indicate user to scroll down -->
         <div class="scrollIndicator">
-          <img
-            class="chevron animated infinite slideInDown slow"
-            src="./assets/chevron.png"
-            alt="chevron pointing down"
-          />
+          <a href="#about">
+            <img
+              class="chevron"
+              src="./assets/chevron.png"
+              alt="chevron pointing down"
+            />
+          </a>
         </div>
       </div>
       <!-- end of large wrapper -->
@@ -227,74 +226,58 @@
           <span class="accentLine"></span>
           <h2>My Toolbox</h2>
         </div>
-        <ul class="skillLogos" data-aos="zoom-in">
-          <div class="skill">
-            <li><img src="./assets/htmlLogo.png" alt="HTML logo" /></li>
+        <ul class="skillLogos" data-aos="fade-up">
+          <li class="skill">
+            <img src="./assets/htmlLogo.png" alt="HTML logo" />
             <h3>HTML</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/cssLogo.png" alt="CSS logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/cssLogo.png" alt="CSS logo" />
             <h3>CSS</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/sassLogo.png" alt="Sass logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/sassLogo.png" alt="Sass logo" />
             <h3>Sass</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/jsLogo.png" alt="Javascript logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/jsLogo.png" alt="Javascript logo" />
             <h3>JavaScript</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/jqueryLogo.png" alt="jQuery Logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/jqueryLogo.png" alt="jQuery Logo" />
             <h3>jQuery</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/firebaseLogo.png" alt="Firebase logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/firebaseLogo.png" alt="Firebase logo" />
             <h3>Firebase</h3>
-          </div>
-          <div class="skill">
-            <li><img src="./assets/reactLogo.png" alt="React logo" /></li>
+          </li>
+          <li class="skill">
+            <img src="./assets/reactLogo.png" alt="React logo" />
             <h3>React</h3>
-          </div>
-          <div class="skill">
-            <li>
-              <img src="./assets/gitLogo.png" alt="Git logo" />
-            </li>
+          </li>
+          <li class="skill">
+            <img src="./assets/gitLogo.png" alt="Git logo" />
             <h3>Git/Github</h3>
-          </div>
-          <div class="skill">
-            <li>
-              <img
-                src="./assets/vscodeLogo.png"
-                alt="Visual Studio Code logo"
-              />
-            </li>
+          </li>
+          <li class="skill">
+            <img src="./assets/vscodeLogo.png" alt="Visual Studio Code logo" />
             <h3>VSCode</h3>
-          </div>
-          <div class="skill">
-            <li>
-              <img
-                src="./assets/accessibilityLogo.png"
-                alt="Accessibility logo"
-              />
-            </li>
+          </li>
+          <li class="skill">
+            <img
+              src="./assets/accessibilityLogo.png"
+              alt="Accessibility logo"
+            />
             <h3>Accessibility</h3>
-          </div>
-          <div class="skill">
-            <li>
-              <img
-                src="./assets/responsiveLogo.png"
-                alt="Mobile devices icon"
-              />
-            </li>
+          </li>
+          <li class="skill">
+            <img src="./assets/responsiveLogo.png" alt="Mobile devices icon" />
             <h3>Responsive Design</h3>
-          </div>
-          <div class="skill">
-            <li>
-              <img src="./assets/accLogo.png" alt="Adobe Creative Cloud logo" />
-            </li>
+          </li>
+          <li class="skill">
+            <img src="./assets/accLogo.png" alt="Adobe Creative Cloud logo" />
             <h3>Adobe CC</h3>
-          </div>
+          </li>
         </ul>
       </section>
 
@@ -303,8 +286,8 @@
           <span class="accentLine"></span>
           <h2 class="webDevHeading">Web Development</h2>
         </div>
-        <section class="webDev">
-          <div class="webDevImg1" data-aos="fade-right">
+        <section class="webDev" data-aos="fade-up">
+          <div class="webDevImg1">
             <img
               class="webDevImg1"
               src="./assets/deliciousMU.jpg"
@@ -350,18 +333,14 @@
               </a>
             </div>
           </div>
-          <div class="webDevImg2" data-aos="fade-up">
+          <div class="webDevImg2">
             <img
               class="webDevImg2"
               src="./assets/guessThatColourMU.jpg"
               alt="A desktop computer that is displaying the Guess That Colour website"
             />
           </div>
-          <div
-            class="projDescription description2"
-            data-aos="fade-up"
-            tabindex="0"
-          >
+          <div class="projDescription description2" tabindex="0">
             <h3>Guess That Colour!</h3>
             <p>Interactive guessing game</p>
             <p>HTML - Sass - jQuery - API</p>
@@ -391,11 +370,7 @@
               </a>
             </div>
           </div>
-          <div
-            class="projDescription description3"
-            data-aos="fade-right"
-            tabindex="0"
-          >
+          <div class="projDescription description3" tabindex="0">
             <h3>Story Starter</h3>
             <p>Interactive writing app</p>
             <p>HTML - Sass - React - Firebase</p>
@@ -426,18 +401,14 @@
               </a>
             </div>
           </div>
-          <div class="webDevImg3" data-aos="fade-up">
+          <div class="webDevImg3">
             <img
               class="webDevImg3"
               src="./assets/storyStarterMU.jpg"
               alt="A laptop that is displaying the Story Starter website"
             />
           </div>
-          <div
-            class="projDescription description4"
-            data-aos="fade-up"
-            tabindex="0"
-          >
+          <div class="projDescription description4" tabindex="0">
             <h3>Notice Board</h3>
             <p>Public notes app</p>
             <p>HTML - Sass - React - Firebase</p>
@@ -467,7 +438,7 @@
               </a>
             </div>
           </div>
-          <div class="webDevImg4" data-aos="fade-up">
+          <div class="webDevImg4">
             <img
               class="webDevImg4"
               src="./assets/noticeBoardMU.jpg"
@@ -482,19 +453,15 @@
           <span class="accentLine"></span>
           <h2>Graphic Design</h2>
         </div>
-        <section class="graphicDesign">
-          <div class="graphicImg1" data-aos="zoom-in">
+        <section class="graphicDesign" data-aos="fade-up">
+          <div class="graphicImg1">
             <img
               class="graphicImg1"
               src="./assets/logosMU.jpg"
               alt="Tablet on a tabletop displaying logo designs"
             />
           </div>
-          <div
-            class="projDescription graphicDescription1"
-            data-aos="fade-up"
-            tabindex="0"
-          >
+          <div class="projDescription graphicDescription1" tabindex="0">
             <h3>Logo Design</h3>
             <p>Adobe Illustrator</p>
             <a href="./design.html#designProjects"
@@ -506,11 +473,7 @@
               <p>See Design Projects</p>
             </a>
           </div>
-          <div
-            class="projDescription graphicDescription2"
-            data-aos="fade-right"
-            tabindex="0"
-          >
+          <div class="projDescription graphicDescription2" tabindex="0">
             <h3>Branding</h3>
             <p>Adobe Illustrator & InDesign</p>
             <a href="./design.html#designProjects">
@@ -522,25 +485,21 @@
               <p>See Design Projects</p>
             </a>
           </div>
-          <div class="graphicImg2" data-aos="zoom-in">
+          <div class="graphicImg2">
             <img
               class="graphicImg2"
               src="./assets/brandingMU.jpg"
               alt="A tablet on a desk displaying branding design"
             />
           </div>
-          <div class="graphicImg3" data-aos="zoom-in">
+          <div class="graphicImg3">
             <img
               class="graphicImg3"
               src="./assets/pageLayoutMU.jpg"
               alt="A laptop that is displaying page layout designs"
             />
           </div>
-          <div
-            class="projDescription graphicDescription3"
-            data-aos="fade-up"
-            tabindex="0"
-          >
+          <div class="projDescription graphicDescription3" tabindex="0">
             <h3>Page Layout</h3>
             <p>Adobe Photoshop & InDesign</p>
             <a href="./design.html#designProjects"
@@ -552,11 +511,7 @@
               <p>See Design Projects</p>
             </a>
           </div>
-          <div
-            class="projDescription graphicDescription4"
-            data-aos="fade-right"
-            tabindex="0"
-          >
+          <div class="projDescription graphicDescription4" tabindex="0">
             <h3>Photoshop</h3>
             <p>Adobe Photoshop</p>
             <a href="./design.html#designProjects"
@@ -568,7 +523,7 @@
               <p>See Design Projects</p>
             </a>
           </div>
-          <div class="graphicImg4" data-aos="zoom-in">
+          <div class="graphicImg4">
             <img
               class="graphicImg4"
               src="./assets/photoManipMU.jpg"

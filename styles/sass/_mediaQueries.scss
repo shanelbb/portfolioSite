@@ -158,9 +158,6 @@
 }
 
 @media (max-width: 1192px) {
-  .fillerImg {
-    display: initial;
-  }
   .webDev {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -337,20 +334,6 @@
     justify-content: center;
   }
 
-  // span.accentLineBottom {
-  //   display: none;
-  // }
-
-  // .accentLineBelow {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-
-  // span.accentLineBelow {
-  //   display: block;
-  //   margin: 20px 0;
-  // }
-
   .scrollIndicator {
     display: none;
   }
@@ -384,10 +367,6 @@
 }
 
 @media (max-width: 884px) {
-  .fillerImg {
-    display: none;
-  }
-
   header {
     position: relative;
   }

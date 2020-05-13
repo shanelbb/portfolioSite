@@ -339,12 +339,15 @@ label.toggle {
   margin-left: 25px;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.headerNavList li a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.headerNavList li:hover, .headerNavList li:focus {
-  color: #ce9993;
+.headerNavList li a:hover, .headerNavList li a:focus {
+  color: #a37c79;
 }
 
 .headerSection {
@@ -557,10 +560,6 @@ span.accentLineBelow {
 
 .skill h3 {
   text-align: center;
-}
-
-.fillerImg {
-  display: none;
 }
 
 .webDevProjects,
@@ -890,7 +889,7 @@ textarea {
 }
 
 .footerNav li a:hover {
-  color: #ce9993;
+  color: #a37c79;
 }
 
 .footerSocial {
@@ -981,7 +980,7 @@ span.accentLineFooterMiddle {
 }
 
 .projectsList ul li:hover {
-  color: #ce9993;
+  color: #a37c79;
 }
 
 .projectsGallery {
@@ -1229,9 +1228,6 @@ figure {
 }
 
 @media (max-width: 1192px) {
-  .fillerImg {
-    display: initial;
-  }
   .webDev {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -1463,9 +1459,6 @@ figure {
 }
 
 @media (max-width: 884px) {
-  .fillerImg {
-    display: none;
-  }
   header {
     position: relative;
   }
