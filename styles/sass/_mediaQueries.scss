@@ -21,12 +21,6 @@
     font-size: 2.7rem;
   }
 
-  .headerBtn {
-    font-size: 2.4rem;
-    width: 225px;
-    padding: 16px;
-  }
-
   .headerRight {
     height: auto;
     margin-top: 100px;
@@ -34,6 +28,10 @@
       width: 650px;
       height: 650px;
     }
+  }
+
+  .chevron {
+    margin-bottom: 20px;
   }
 
   .skillLogos {
@@ -82,17 +80,11 @@
     font-size: 2.2rem;
   }
 
-  .headerBtn {
-    font-size: 2rem;
-    width: 175px;
-    padding: 12px;
-  }
-
   .socialNav {
     img {
-      width: 30px;
-      height: 30px;
-      margin-right: 30px;
+      width: 25px;
+      height: 25px;
+      margin-right: 25px;
     }
   }
 
