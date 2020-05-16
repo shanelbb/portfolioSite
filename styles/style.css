@@ -227,6 +227,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .largeWrapper {
@@ -417,7 +418,7 @@ span.accentLineBelow {
 .socialNav img {
   width: 20px;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 25px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -443,7 +444,7 @@ span.accentLineBelow {
 }
 
 .socialNavBtm li {
-  margin: 30px 10px;
+  margin: 30px 20px;
 }
 
 .socialNavBtm li img {
@@ -524,8 +525,8 @@ span.accentLineBelow {
 }
 
 .aboutText p {
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.6;
   padding: 20px 0 0 0;
 }
 
@@ -599,6 +600,59 @@ span.accentLineBelow {
       grid-row-start: 1;
   grid-row-end: 3;
   border-radius: 5px;
+  position: relative;
+}
+
+.webDevImg1::after {
+  content: ". . .";
+  color: #a37c79;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  right: -20px;
+}
+
+.webDevImg2 {
+  position: relative;
+}
+
+.webDevImg2::after {
+  content: ". . .";
+  color: #a37c79;
+  font-size: 2rem;
+  position: absolute;
+  bottom: -20px;
+  right: 45%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.webDevImg3 {
+  position: relative;
+}
+
+.webDevImg3::before {
+  content: ". . .";
+  color: #a37c79;
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: -20px;
+}
+
+.webDevImg4 {
+  position: relative;
+}
+
+.webDevImg4::before {
+  content: ". . .";
+  color: #a37c79;
+  font-size: 2rem;
+  position: absolute;
+  top: -20px;
+  right: 21%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .webDevImg2,
@@ -655,6 +709,58 @@ span.accentLineBelow {
      object-fit: cover;
 }
 
+.graphicImg1 {
+  position: relative;
+}
+
+.graphicImg1::after {
+  content: ". . .";
+  position: absolute;
+  color: #a37c79;
+  font-size: 2rem;
+  top: 45%;
+  right: -20px;
+}
+
+.graphicImg2 {
+  position: relative;
+}
+
+.graphicImg2::before {
+  content: ". . .";
+  position: absolute;
+  color: #a37c79;
+  font-size: 2rem;
+  top: 45%;
+  left: -20px;
+}
+
+.graphicImg3 {
+  position: relative;
+}
+
+.graphicImg3::after {
+  content: ". . .";
+  position: absolute;
+  color: #a37c79;
+  font-size: 2rem;
+  top: 45%;
+  right: -20px;
+}
+
+.graphicImg4 {
+  position: relative;
+}
+
+.graphicImg4::before {
+  content: ". . .";
+  position: absolute;
+  color: #a37c79;
+  font-size: 2rem;
+  top: 45%;
+  left: -20px;
+}
+
 .projDescription {
   background: -webkit-gradient(linear, left bottom, left top, from(#ce9993), to(#f7e4e4));
   background: linear-gradient(to top, #ce9993, #f7e4e4);
@@ -673,50 +779,9 @@ span.accentLineBelow {
 }
 
 .projDescription p {
-  font-size: 1.4rem;
-  margin: 10px;
-}
-
-.overlayContainer {
-  position: relative;
-}
-
-.overlay {
-  max-width: 100%;
-  max-height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ce9993), to(#f7e4e4));
-  background: linear-gradient(to top, #ce9993, #f7e4e4);
-  -webkit-filter: opacity(0);
-          filter: opacity(0);
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.overlay:hover, .overlay:focus {
-  -webkit-filter: opacity(100%);
-          filter: opacity(100%);
-}
-
-.overlay p {
-  font-size: 1.4rem;
-  margin: 10px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 5px;
 }
 
 .projectLinks {
@@ -728,22 +793,28 @@ span.accentLineBelow {
           justify-content: center;
 }
 
-.projectsLink {
-  height: 20px;
-  margin: 20px 20px 0 20px;
+.projectLinks a,
+.projDescription a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.projectsLink:hover, .projectsLink:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.projectLinks a:hover, .projectLinks a:focus,
+.projDescription a:hover,
+.projDescription a:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.projectsLink {
+  height: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0 20px;
 }
 
@@ -1238,6 +1309,12 @@ figure {
     width: 100%;
     height: 300px;
   }
+  .webDevImg1::after,
+  .webDevImg2::after,
+  .webDevImg3::before,
+  .webDevImg4::before {
+    display: none;
+  }
   .description1,
   .description2,
   .description3,
@@ -1301,6 +1378,12 @@ figure {
         -ms-flex-order: 3;
             order: 3;
   }
+  .graphicImg1::after,
+  .graphicImg2::before,
+  .graphicImg3::after,
+  .graphicImg4::before {
+    display: none;
+  }
   .contactContainer {
     margin: 0 0 100px 0;
   }
@@ -1360,7 +1443,9 @@ figure {
     margin-bottom: 40px;
   }
   .footerSocial img {
-    margin: 0 10px;
+    margin: 0 20px;
+    width: 25px;
+    height: 25px;
   }
   .copyright {
     -webkit-box-ordinal-group: 2;
@@ -1647,8 +1732,11 @@ figure {
 }
 
 @media (max-width: 580px) {
+  .largeWrapper {
+    width: 90vw;
+  }
   .wrapper {
-    width: 70vw;
+    width: 85vw;
   }
   .headerBar p {
     font-size: 1.6rem;
@@ -1664,6 +1752,10 @@ figure {
   .aboutImgOutline {
     width: 275px;
     height: 350px;
+  }
+  .skillLogos {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -1707,10 +1799,6 @@ figure {
   .aboutImgOutline {
     width: 225px;
     height: 325px;
-  }
-  .skillLogos {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 
@@ -1770,7 +1858,7 @@ figure {
   .graphicDescription2,
   .graphicDescription3,
   .graphicDescription4 {
-    height: 250px;
+    height: 275px;
   }
 }
 
@@ -1783,6 +1871,10 @@ figure {
   .aboutImgOutline {
     left: -20px;
     top: 20px;
+  }
+  .skillLogos {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 

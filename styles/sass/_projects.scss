@@ -23,6 +23,57 @@
   grid-row-start: 1;
   grid-row-end: 3;
   border-radius: 5px;
+  position: relative;
+}
+
+.webDevImg1::after {
+  content: ". . .";
+  color: $tertiary;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  right: -20px;
+}
+
+.webDevImg2 {
+  position: relative;
+}
+
+.webDevImg2::after {
+  content: ". . .";
+  color: $tertiary;
+  font-size: 2rem;
+  position: absolute;
+  bottom: -20px;
+  right: 45%;
+  transform: rotate(90deg);
+}
+
+.webDevImg3 {
+  position: relative;
+}
+
+.webDevImg3::before {
+  content: ". . .";
+  color: $tertiary;
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: -20px;
+}
+
+.webDevImg4 {
+  position: relative;
+}
+
+.webDevImg4::before {
+  content: ". . .";
+  color: $tertiary;
+  font-size: 2rem;
+  position: absolute;
+  top: -20px;
+  right: 21%;
+  transform: rotate(90deg);
 }
 
 .webDevImg2,
@@ -71,6 +122,55 @@
   object-fit: cover;
 }
 
+.graphicImg1 {
+  position: relative;
+}
+
+.graphicImg1::after {
+  content: ". . .";
+  position: absolute;
+  color: $tertiary;
+  font-size: 2rem;
+  top: 45%;
+  right: -20px;
+}
+.graphicImg2 {
+  position: relative;
+}
+
+.graphicImg2::before {
+  content: ". . .";
+  position: absolute;
+  color: $tertiary;
+  font-size: 2rem;
+  top: 45%;
+  left: -20px;
+}
+.graphicImg3 {
+  position: relative;
+}
+
+.graphicImg3::after {
+  content: ". . .";
+  position: absolute;
+  color: $tertiary;
+  font-size: 2rem;
+  top: 45%;
+  right: -20px;
+}
+.graphicImg4 {
+  position: relative;
+}
+
+.graphicImg4::before {
+  content: ". . .";
+  position: absolute;
+  color: $tertiary;
+  font-size: 2rem;
+  top: 45%;
+  left: -20px;
+}
+
 .projDescription {
   background: linear-gradient(to top, $primary, $secondary);
   border-radius: 5px;
@@ -80,40 +180,9 @@
   text-align: center;
 
   p {
-    font-size: 1.4rem;
-    margin: 10px;
-  }
-}
-
-.overlayContainer {
-  position: relative;
-}
-
-.overlay {
-  max-width: 100%;
-  max-height: 100%;
-  background: linear-gradient(to top, $primary, $secondary);
-  filter: opacity(0);
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  transition: all 0.5s;
-
-  &:hover,
-  &:focus {
-    filter: opacity(100%);
-  }
-
-  p {
-    font-size: 1.4rem;
-    margin: 10px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 5px;
   }
 }
 
@@ -122,19 +191,24 @@
   justify-content: center;
 }
 
-.projectsLink {
-  height: 20px;
-  margin: 20px 20px 0 20px;
+.projectLinks a,
+.projDescription a {
   transition: all 0.3s;
+
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
+.projectsLink {
+  height: 20px;
+  margin: 20px 20px 0 20px;
+}
+
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0 20px;
 }
