@@ -531,7 +531,8 @@ span.accentLineBelow {
 }
 
 .skillLogos {
-  margin: 50px 0;
+  max-width: 1050px;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 25px;
