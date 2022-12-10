@@ -288,6 +288,10 @@
     flex-direction: column;
   }
 
+  .footerNav {
+    padding-bottom: 40px;
+  }
+
   span.accentLineFooterMiddle {
     display: initial;
     margin: 40px 0 10px 0;
@@ -311,13 +315,16 @@
 
 @media (max-width: 1024px) {
   .largeWrapper {
-    height: 100%;
+    height: auto;
+    max-height: 100%;
     margin-bottom: 30px;
   }
   .headerSection {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding-bottom: 30px;
   }
 
   .headerLeft {
@@ -326,7 +333,8 @@
     text-align: center;
     height: 100%;
     width: 100%;
-    margin: 50px 0;
+    padding: 0;
+    margin: 50px 0 25px;
   }
 
   .socialNav {
@@ -359,8 +367,8 @@
     order: -1;
     margin: 0;
     width: 100%;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
   }
 
   .aboutBtn {
@@ -370,7 +378,7 @@
   .skillsHeading {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 }
 
@@ -576,6 +584,9 @@
 @media (max-width: 580px) {
   .largeWrapper {
     width: 90vw;
+    height: 100%;
+    height: auto;
+    padding-bottom: 30px;
   }
 
   .wrapper {
