@@ -32,6 +32,14 @@ figure {
   position: relative;
 }
 
+.modalFig {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .modalContent img {
   max-height: 90vh;
   height: auto;

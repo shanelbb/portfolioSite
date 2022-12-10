@@ -29,7 +29,12 @@
     <header id="home">
       <!-- logo and nav bar above pink background -->
       <div class="headerBar wrapper">
-        <img class="sbLogo" src="./assets/sbLogo.png" alt="Shanel Beebe logo" />
+        <a href="#home"
+          ><img
+            class="sbLogo"
+            src="./assets/sbLogo.png"
+            alt="Shanel Beebe logo"
+        /></a>
 
         <nav class="headerNav">
           <!-- Hamburger menu icon and checkbox for mobile nav -->
@@ -45,7 +50,10 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Code</a></li>
+            <li>
+              <a href="./design.html#designProjects">Design</a>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -67,7 +75,7 @@
               >
             </div>
             <!-- Social media links (display:none @ < 1024px as links move below image) -->
-            <ul class="socialNav">
+            <!-- <ul class="socialNav">
               <li>
                 <a
                   aria-label="Come tweet at me!"
@@ -115,7 +123,7 @@
                   ><img src="./assets/envelope.svg" alt="email icon"
                 /></a>
               </li>
-            </ul>
+            </ul> -->
           </section>
           <!-- right side of header in desktop mode -->
           <section class="headerRight">
@@ -203,14 +211,14 @@
           />
           <div class="aboutImgOutline"></div>
         </div>
-        <div class="aboutText" data-aos="fade-up">
+        <div class="bodyText" data-aos="fade-up">
           <span class="accentLine"></span>
           <h2>About Me</h2>
           <p>
-            Hi! My name is Shanel Beebe. I am a front-end web developer and
-            graphic designer living in Calgary. I attended the web development
-            bootcamp at Juno College (formerly Hacker You), and I have a diploma
-            in graphic design and interactive media from Toronto Film School.
+            Hi! My name is Shanel Beebe. I am a web developer living in Calgary.
+            I attended the web development bootcamp at Juno College (formerly
+            Hacker You), and I have a diploma in graphic design and interactive
+            media from Toronto Film School.
           </p>
           <p>
             I am passionate about coding, creating cool stuff, and learning new
@@ -220,9 +228,9 @@
             section of this site.
           </p>
           <div class="buttons">
-            <a href="#projects"><button class="aboutBtn">View Works</button></a>
+            <a href="#code"><button class="aboutBtn">View Works</button></a>
             <a
-              href="./assets/shanelBeebeResume.pdf"
+              href="./assets/shanel_beebe_resume.pdf"
               download="shanelBeebeResume"
               ><button class="aboutBtn">Download CV</button></a
             >
@@ -294,7 +302,7 @@
       <!-- Skills section ends -->
 
       <!-- Web developement project sections. Projects link targets this section -->
-      <section class="webDevProjects" id="projects">
+      <section class="webDevProjects" id="code">
         <div class="projectsHeading" data-aos="fade-down">
           <span class="accentLine"></span>
           <h2 class="webDevHeading">Web Development</h2>
@@ -463,7 +471,7 @@
       <!-- Web dev projects section ends -->
 
       <!-- Graphic design projects section  -->
-      <section class="graphicDesignProjects">
+      <section class="graphicDesignProjects" id="design">
         <div class="projectsHeading" data-aos="fade-down">
           <span class="accentLine"></span>
           <h2>Graphic Design</h2>
@@ -560,12 +568,31 @@
           <div class="contactImgOutline"></div>
         </div>
         <div class="contact" data-aos="fade-up">
-          <div class="contactHeading">
+          <section class="contactHeading bodyText">
             <span class="accentLine"></span>
             <h2>Get In Touch</h2>
-          </div>
-          
-          <form
+
+            <p>
+              I'd love to hear from you if you'd like to work on a project
+              together or just have a chat.
+            </p>
+            <p>
+              <a href="mailto:hello@shanelbeebe.com" target="_blank"
+                >Send me an email</a
+              >
+            </p>
+            <p>
+              <a href="https://github.com/shanelbb" target="_blank"
+                >Check out my Github page</a
+              >
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/shanelbeebe/" target="_blank"
+                >Connect with me on LinkedIn</a
+              >
+            </p>
+          </section>
+          <!-- <form
             id="contactForm"
             method="POST"
             action="https://formspree.io/xqkyadel"
@@ -619,7 +646,7 @@
             >
               Send Message
             </button>
-          </form>
+          </form> -->
         </div>
       </section>
       <!-- Contact section ends -->
@@ -631,15 +658,25 @@
       <!-- Footer content inside wrapper -->
       <div class="wrapper footerWrapper">
         <!-- my logo -->
-        <img src="./assets/sbLogo.png" alt="Shanel Beebe logo" class="sbLogo" />
+        <a href="#home"
+          ><img
+            src="./assets/sbLogo.png"
+            alt="Shanel Beebe logo"
+            class="sbLogo"
+        /></a>
         <div class="footerText">
-          <p class="copyright">&#169; Shanel Beebe 2021</p>
+          <p class="copyright">&#169; Shanel Beebe 2022</p>
           <!-- Site navigation -->
           <ul class="footerNav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Code</a></li>
+            <li>
+              <a href="https://shanelbeebe.com/design.html#designProjects"
+                >Design</a
+              >
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
 
@@ -647,7 +684,7 @@
 
           <!-- Social media links -->
           <ul class="footerSocial">
-            <li>
+            <!-- <li>
               <a
                 aria-label="Come tweet at me!"
                 href="https://twitter.com/shanelligan"
@@ -656,7 +693,7 @@
                 aria-describedby="new-window-2"
                 ><img src="./assets/twitter.svg" alt="twitter icon"
               /></a>
-            </li>
+            </li> -->
             <li>
               <a
                 aria-label="See my web dev work on Github."
@@ -667,7 +704,7 @@
                 ><img src="./assets/github.svg" alt="github icon"
               /></a>
             </li>
-            <li>
+            <!-- <li>
               <a
                 aria-label="See my graphic design work on Behance."
                 href="https://www.behance.net/shanelbeebdfa9"
@@ -676,7 +713,7 @@
                 aria-describedby="new-window-2"
                 ><img src="./assets/behance.svg" alt="behance icon"
               /></a>
-            </li>
+            </li> -->
             <li>
               <a
                 aria-label="Connect with me on LinkedIn."
