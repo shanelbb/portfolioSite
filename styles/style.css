@@ -497,7 +497,7 @@ span.accentLineBelow {
   z-index: -1;
 }
 
-.aboutText {
+.bodyText {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,10 +512,15 @@ span.accentLineBelow {
   margin-left: 50px;
 }
 
-.aboutText p {
+.bodyText p {
   font-size: 1.8rem;
   line-height: 1.6;
   padding: 20px 0 0 0;
+}
+
+.bodyText a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .buttons {
@@ -564,9 +569,9 @@ span.accentLineBelow {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .webDev {
@@ -972,6 +977,10 @@ span.accentLineFooterMiddle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -995,7 +1004,7 @@ span.accentLineFooterMiddle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .projectsList ul {
   -ms-flex-wrap: wrap;
@@ -1108,6 +1117,22 @@ figure {
   position: relative;
 }
 
+.modalFig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .modalContent img {
   max-height: 90vh;
   height: auto;
@@ -1139,23 +1164,18 @@ figure {
   .largeWrapper .footerLargeWrapper {
     max-width: 2500px;
   }
-
   .headerBar p {
     font-size: 3.5rem;
   }
-
   span.accentLine {
     width: 225px;
   }
-
   h1 {
     font-size: 8.5rem;
   }
-
   .headerP {
     font-size: 2.7rem;
   }
-
   .headerRight {
     height: auto;
     margin-top: 100px;
@@ -1164,23 +1184,18 @@ figure {
     width: 650px;
     height: 650px;
   }
-
   .chevron {
     margin-bottom: 20px;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-
   .skillLogos li img {
     height: 150px;
   }
-
   .contactImg {
     width: 450px;
   }
-
   .contactForm input {
     width: 95%;
   }
@@ -1189,7 +1204,6 @@ figure {
   .largeWrapper {
     height: auto;
   }
-
   .headerLeft {
     height: auto;
     margin-top: 300px;
@@ -1200,25 +1214,20 @@ figure {
     width: 125px;
     height: 125px;
   }
-
   span.accentLine {
     width: 175px;
   }
-
   h1 {
     font-size: 7.5rem;
   }
-
   .headerP {
     font-size: 2.2rem;
   }
-
   .socialNav img {
     width: 25px;
     height: 25px;
     margin-right: 25px;
   }
-
   .headerRight img {
     width: 600px;
     height: 600px;
@@ -1232,19 +1241,15 @@ figure {
     width: 450px;
     height: 450px;
   }
-
   .aboutImg {
     width: 350px;
   }
-
   .aboutImgOutline {
     width: 325px;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   }
-
   .webDevImg1 {
     width: 275px;
   }
@@ -1253,20 +1258,16 @@ figure {
   .headerNav ul li {
     font-size: 1.6rem;
   }
-
   h1 {
     font-size: 5rem;
   }
-
   .headerP {
     font-size: 1.6rem;
   }
-
   .headerRight img {
     width: 400px;
     height: 400px;
   }
-
   .aboutImgOutline {
     width: 300px;
   }
@@ -1276,7 +1277,6 @@ figure {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-
   .webDevImg1,
 .webDevImg2,
 .webDevImg3,
@@ -1284,21 +1284,18 @@ figure {
     width: 100%;
     height: 300px;
   }
-
   .webDevImg1::after,
 .webDevImg2::after,
 .webDevImg3::before,
 .webDevImg4::before {
     display: none;
   }
-
   .description1,
 .description2,
 .description3,
 .description4 {
     height: 300px;
   }
-
   .webDevImg1 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1308,7 +1305,6 @@ figure {
         -ms-flex-order: 1;
             order: 1;
   }
-
   .description1 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1316,18 +1312,15 @@ figure {
         -ms-flex-order: 0;
             order: 0;
   }
-
   .webDevImg2 {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
   .webDevImg3 {
     grid-column-start: 2;
     grid-column-end: 3;
     height: 300px;
   }
-
   .webDevImg4 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1336,17 +1329,14 @@ figure {
             order: 2;
     height: 300px;
   }
-
   .description2 {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
   .description3 {
     grid-row-start: 3;
     grid-row-end: 4;
   }
-
   .description4 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -1354,36 +1344,29 @@ figure {
         -ms-flex-order: 3;
             order: 3;
   }
-
   .graphicImg1::after,
 .graphicImg2::before,
 .graphicImg3::after,
 .graphicImg4::before {
     display: none;
   }
-
   .contactContainer {
     margin: 0 0 100px 0;
   }
-
   .contactHeading {
     text-align: center;
     margin-bottom: 50px;
   }
-
   .contact {
     margin-top: 0;
   }
-
   .contactForm {
     grid-template-columns: 1fr;
   }
-
   .contactForm input {
     width: 100%;
     margin-right: 0;
   }
-
   .userMessage {
     margin-bottom: 20px;
   }
@@ -1392,42 +1375,34 @@ figure {
   .headerNav ul li {
     font-size: 1.4rem;
   }
-
   h1 {
     font-size: 4.5rem;
   }
-
   .headerP {
     font-size: 1.4rem;
   }
-
   .headerRight img {
     width: 375px;
     height: 375px;
   }
-
   .contactImgOutline {
     left: -30px;
     top: 30px;
     width: 225px;
   }
-
   .footerText {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   span.accentLineFooterMiddle {
     display: initial;
     margin: 40px 0 10px 0;
   }
-
   span.accentLineFooterBottom {
     display: none;
   }
-
   .footerSocial {
     margin-bottom: 40px;
   }
@@ -1436,7 +1411,6 @@ figure {
     width: 25px;
     height: 25px;
   }
-
   .copyright {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1448,7 +1422,6 @@ figure {
     height: 100%;
     margin-bottom: 30px;
   }
-
   .headerSection {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1461,7 +1434,6 @@ figure {
         -ms-flex-align: center;
             align-items: center;
   }
-
   .headerLeft {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1474,15 +1446,12 @@ figure {
     width: 100%;
     margin: 50px 0;
   }
-
   .socialNav {
     display: none;
   }
-
   .headerRight {
     position: static;
   }
-
   .socialNavBtm {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1491,11 +1460,9 @@ figure {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .scrollIndicator {
     display: none;
   }
-
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1505,12 +1472,10 @@ figure {
         -ms-flex-align: center;
             align-items: center;
   }
-
   .aboutImgOutline {
     width: 350px;
   }
-
-  .aboutText {
+  .bodyText {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -1521,11 +1486,9 @@ figure {
             align-items: center;
     text-align: center;
   }
-
   .aboutBtn {
     margin-bottom: 20px;
   }
-
   .skillsHeading {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1543,7 +1506,6 @@ figure {
   header {
     position: relative;
   }
-
   .headerNav ul {
     position: absolute;
     top: -100%;
@@ -1556,11 +1518,9 @@ figure {
     font-weight: 500;
     font-size: 1.8rem;
   }
-
   label.toggle {
     display: initial;
   }
-
   input[type=checkbox]:checked + ul.headerNavList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1582,17 +1542,14 @@ figure {
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
-
   .webDev,
 .graphicDesign {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-
   .webDevImg1,
 .webDevImg2,
 .webDevImg3,
@@ -1606,27 +1563,22 @@ figure {
     height: 400px;
     width: 100%;
   }
-
   .webDevImg1 {
     grid-row-start: 2;
     grid-row-end: 3;
   }
-
   .description2 {
     grid-row-start: 3;
     grid-row-end: 4;
   }
-
   .description3 {
     grid-row-start: 5;
     grid-row-end: 6;
   }
-
   .description4 {
     grid-row-start: 7;
     grid-row-end: 8;
   }
-
   .graphicImg1,
 .graphicImg2,
 .graphicImg3,
@@ -1637,53 +1589,43 @@ figure {
 .graphicDescription4 {
     height: 400px;
   }
-
   .graphicDescription1,
 .graphicDescription2,
 .graphicDescription3,
 .graphicDescription4 {
     width: 100%;
   }
-
   .graphicDescription1 {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   .graphicDescription3 {
     grid-row-start: 5;
     grid-row-end: 6;
   }
-
   .contact {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-
   .contactForm {
     justify-items: center;
     margin-bottom: 20px;
   }
-
   .contactGraphic {
     display: none;
   }
-
   .contact {
     width: 100%;
     margin-left: 0;
   }
-
   .userInputs {
     width: 100%;
   }
-
   .contactForm input {
     margin: 0 0 20px 0;
     width: 100%;
   }
-
   .contactForm button {
     margin-top: 20px;
   }
@@ -1724,12 +1666,10 @@ figure {
     height: auto;
     padding-bottom: 20px;
   }
-
   .headerLeft {
     height: auto;
     margin-top: 100px;
   }
-
   .headerRight {
     bottom: -40px;
   }
@@ -1742,30 +1682,24 @@ figure {
   .largeWrapper {
     width: 90vw;
   }
-
   .wrapper {
     width: 85vw;
   }
-
   .headerBar p {
     font-size: 1.6rem;
   }
-
   .headerRight img {
     width: 325px;
     height: 325px;
   }
-
   .aboutImg {
     width: 275px;
     height: 350px;
   }
-
   .aboutImgOutline {
     width: 275px;
     height: 350px;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
@@ -1789,7 +1723,6 @@ figure {
 .graphicDescription4 {
     height: 300px;
   }
-
   .footerNav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1801,7 +1734,6 @@ figure {
   .footerNav li {
     margin-bottom: 20px;
   }
-
   span.accentLineFooterMiddle {
     margin-top: 20px;
   }
@@ -1823,7 +1755,6 @@ figure {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .aboutBtn {
     margin-right: 0;
   }
@@ -1832,7 +1763,6 @@ figure {
   .headerBar p {
     font-size: 1.4rem;
   }
-
   .headerButtons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1842,12 +1772,10 @@ figure {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .headerButtons a:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 20px;
   }
-
   .headerRight {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1864,12 +1792,10 @@ figure {
     width: 250px;
     height: 250px;
   }
-
   .webDevHeading {
     text-align: center;
     line-height: 1.4;
   }
-
   .webDevImg1,
 .webDevImg2,
 .webDevImg3,
@@ -1895,12 +1821,10 @@ figure {
     width: 200px;
     height: 300px;
   }
-
   .aboutImgOutline {
     left: -20px;
     top: 20px;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
@@ -1909,16 +1833,13 @@ figure {
   .headerBar p {
     font-size: 1.2rem;
   }
-
   h1 {
     font-size: 4rem;
   }
-
   .headerRight img {
     width: 225px;
     height: 225px;
   }
-
   .skillLogos {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }
@@ -1927,7 +1848,6 @@ figure {
   #gallery1 {
     height: 620px;
   }
-
   #gallery2,
 #gallery3,
 #gallery4,
@@ -1940,22 +1860,18 @@ figure {
   .projectsList ul {
     width: 100%;
   }
-
   .projectsGallery {
     grid-template-columns: 1fr 1fr;
   }
-
   #gallery1 {
     height: 215px;
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   #gallery2 {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-
   #gallery5 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -1983,12 +1899,10 @@ figure {
   .projectsGallery {
     grid-template-columns: 1fr;
   }
-
   #gallery2 {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-
   #gallery1,
 #gallery2,
 #gallery3,
@@ -2012,7 +1926,6 @@ figure {
   .projectsH1 {
     font-size: 4rem;
   }
-
   .close {
     width: 20px;
     height: 20px;
@@ -2035,7 +1948,6 @@ figure {
     text-align: center;
     padding: 0 25px;
   }
-
   #gallery1,
 #gallery2,
 #gallery3,

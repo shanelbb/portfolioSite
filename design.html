@@ -20,7 +20,12 @@
     <header>
       <!-- logo and nav bar above pink background -->
       <div class="headerBar wrapper">
-        <img class="sbLogo" src="./assets/sbLogo.png" alt="Shanel Beebe logo" />
+        <a href="index.html#home"
+          ><img
+            class="sbLogo"
+            src="./assets/sbLogo.png"
+            alt="Shanel Beebe logo"
+        /></a>
 
         <nav class="headerNav">
           <!-- Hamburger menu icon and checkbox for mobile nav -->
@@ -36,7 +41,8 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html#about">About</a></li>
             <li><a href="./index.html#skills">Skills</a></li>
-            <li><a href="./index.html#projects">Projects</a></li>
+            <li><a href="./index.html#code">Code</a></li>
+            <li><a href="./design.html#designProjects">Design</a></li>
             <li><a href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
@@ -45,6 +51,7 @@
       <div class="largeWrapper projectsLargeWrapper">
         <!-- content wrapper starts -->
         <div class="projectsHeader">
+          <span class="accentLine"></span>
           <h1 class="projectsH1">Graphic Design</h1>
         </div>
         <!-- End of wrapper -->
@@ -53,10 +60,10 @@
 
     <!-- Main section starts -->
     <main class="wrapper">
-      <div class="projectsPageHeader" id="designProjects">
+      <!-- <div class="projectsPageHeader" id="designProjects">
         <span class="accentLine"></span>
         <h2>Graphic Design Projects</h2>
-      </div>
+      </div> -->
       <div class="projectsList">
         <ul>
           <li id="logos">Logo Design</li>
@@ -71,6 +78,7 @@
         <img
           id="gallery1"
           class="galleryImg"
+          data-listnum="0"
           src="./assets/floataMU.jpg"
           alt="Floata logo business card mockup"
           tabindex="0"
@@ -78,6 +86,7 @@
         <img
           id="gallery2"
           class="galleryImg"
+          data-listnum="1"
           src="./assets/autonomeMU.jpg"
           alt="Autonome logo stationary mockup"
           tabindex="0"
@@ -85,6 +94,7 @@
         <img
           id="gallery3"
           class="galleryImg"
+          data-listnum="2"
           src="./assets/logosPage.jpg"
           alt="Grid of black and white logo designs"
           tabindex="0"
@@ -92,6 +102,7 @@
         <img
           id="gallery4"
           class="galleryImg"
+          data-listnum="3"
           src="./assets/dnaMU.jpg"
           alt="DNA Athletics logo business card mockup"
           tabindex="0"
@@ -99,6 +110,7 @@
         <img
           id="gallery5"
           class="galleryImg"
+          data-listnum="4"
           src="./assets/clothMU.jpg"
           alt="Cloth clothing logo business card mockup"
           tabindex="0"
@@ -106,6 +118,7 @@
         <img
           id="gallery6"
           class="galleryImg"
+          data-listnum="5"
           src="./assets/flintFlameMU.jpg"
           alt="Flint & Flame logo business card mockup"
           tabindex="0"
@@ -124,9 +137,14 @@
       <!-- content wrapper starts -->
       <div class="wrapper footerWrapper">
         <!-- my logo -->
-        <img src="./assets/sbLogo.png" alt="Shanel Beebe logo" class="sbLogo" />
+        <a href="https://shanelbeebe.com"
+          ><img
+            class="sbLogo"
+            src="./assets/sbLogo.png"
+            alt="Shanel Beebe logo"
+        /></a>
         <div class="footerText">
-          <p class="copyright">&#169; Shanel Beebe 2021</p>
+          <p class="copyright">&#169; Shanel Beebe 2022</p>
           <!-- site navigation -->
           <ul class="footerNav">
             <li><a href="./index.html">Home</a></li>
@@ -140,7 +158,7 @@
 
           <!-- Social media links -->
           <ul class="footerSocial">
-            <li>
+            <!-- <li>
               <a
                 aria-label="Come tweet at me!"
                 href="https://twitter.com/ShanelBeebe"
@@ -149,7 +167,7 @@
                 aria-describedby="new-window-2"
                 ><img src="./assets/twitter.svg" alt="twitter icon"
               /></a>
-            </li>
+            </li> -->
             <li>
               <a
                 aria-label="See my web dev work on Github."
@@ -160,7 +178,7 @@
                 ><img src="./assets/github.svg" alt="github icon"
               /></a>
             </li>
-            <li>
+            <!-- <li>
               <a
                 aria-label="See my graphic design work on Behance."
                 href="https://www.behance.net/shanelbeebdfa9"
@@ -169,7 +187,7 @@
                 aria-describedby="new-window-2"
                 ><img src="./assets/behance.svg" alt="behance icon"
               /></a>
-            </li>
+            </li> -->
             <li>
               <a
                 aria-label="Connect with me on LinkedIn."
