@@ -42,19 +42,18 @@
 
 @media (max-width: 664px) {
   .projectsList {
+    padding-top: 20px;
     margin-bottom: 10px;
     ul {
       background-color: transparent;
       height: auto;
       margin-bottom: 15px;
-
+      align-content: space-around;
+      
       li {
-        background-color: $secondary;
-        border-radius: 7px;
-        width: 150px;
         text-align: center;
         padding: 10px 15px;
-        margin: 0 15px 15px 0;
+        margin: 0 15px 0px;
       }
     }
   }
