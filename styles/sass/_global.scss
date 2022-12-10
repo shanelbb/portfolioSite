@@ -8,16 +8,16 @@ body {
 }
 
 .largeWrapper {
-  max-width: 1800px;
+  max-width: 1280px;
   width: 85vw;
   margin: 0 auto;
-  height: 80vh;
+  max-height: 80vh;
   background-color: $secondary;
   border-radius: 10px;
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1080px;
   width: 65vw;
   margin: 0 auto;
 }
