@@ -24,10 +24,7 @@
   .headerRight {
     height: auto;
     margin-top: 100px;
-    img {
-      width: 650px;
-      height: 650px;
-    }
+    
   }
 
   .chevron {
@@ -60,6 +57,7 @@
     height: auto;
     margin-top: 300px;
   }
+
 }
 
 @media (min-width: 2000px) {
@@ -87,24 +85,9 @@
       margin-right: 25px;
     }
   }
-
-  .headerRight {
-    img {
-      width: 600px;
-      height: 600px;
-    }
-  }
 }
 
 @media (max-width: 1366px) {
-  .headerRight {
-    bottom: 0;
-    img {
-      width: 450px;
-      height: 450px;
-    }
-  }
-
   .aboutImg {
     width: 350px;
   }
@@ -137,12 +120,6 @@
     font-size: 1.6rem;
   }
 
-  .headerRight {
-    img {
-      width: 400px;
-      height: 400px;
-    }
-  }
 
   .aboutImgOutline {
     width: 300px;
@@ -271,13 +248,6 @@
     font-size: 1.4rem;
   }
 
-  .headerRight {
-    img {
-      width: 375px;
-      height: 375px;
-    }
-  }
-
   .contactImgOutline {
     left: -30px;
     top: 30px;
@@ -336,6 +306,13 @@
     padding: 0;
     margin: 50px 0 25px;
   }
+
+    .headerRight {
+      width: 100%;
+      .portraitOutline {
+        max-width: 80%;
+      }
+    }
 
   .socialNav {
     display: none;
@@ -553,7 +530,6 @@
 
 @media (max-height: 675px) {
   .headerRight {
-    right: 10%;
     img {
       height: 400px;
       width: 400px;

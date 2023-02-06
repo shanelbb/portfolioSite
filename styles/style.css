@@ -470,13 +470,31 @@ span.accentLineBelow {
 }
 
 .headerRight {
-  position: absolute;
-  right: 0;
-  bottom: -20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
 }
-.headerRight img {
-  width: 500px;
-  height: 500px;
+.headerRight .portraitOutline {
+  border-radius: 10px;
+  border: 2px solid #ce9993;
+  margin: 25px 25px 0 25px;
+}
+.headerRight .portraitOutline img {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  border-radius: 10px;
+  margin: -25px 25px 25px -25px;
 }
 
 .socialNavBtm {
@@ -1220,10 +1238,6 @@ figure {
     height: auto;
     margin-top: 100px;
   }
-  .headerRight img {
-    width: 650px;
-    height: 650px;
-  }
   .chevron {
     margin-bottom: 20px;
   }
@@ -1268,19 +1282,8 @@ figure {
     height: 25px;
     margin-right: 25px;
   }
-  .headerRight img {
-    width: 600px;
-    height: 600px;
-  }
 }
 @media (max-width: 1366px) {
-  .headerRight {
-    bottom: 0;
-  }
-  .headerRight img {
-    width: 450px;
-    height: 450px;
-  }
   .aboutImg {
     width: 350px;
   }
@@ -1303,10 +1306,6 @@ figure {
   }
   .headerP {
     font-size: 1.6rem;
-  }
-  .headerRight img {
-    width: 400px;
-    height: 400px;
   }
   .aboutImgOutline {
     width: 300px;
@@ -1421,10 +1420,6 @@ figure {
   .headerP {
     font-size: 1.4rem;
   }
-  .headerRight img {
-    width: 375px;
-    height: 375px;
-  }
   .contactImgOutline {
     left: -30px;
     top: 30px;
@@ -1492,6 +1487,12 @@ figure {
     width: 100%;
     padding: 0;
     margin: 50px 0 25px;
+  }
+  .headerRight {
+    width: 100%;
+  }
+  .headerRight .portraitOutline {
+    max-width: 80%;
   }
   .socialNav {
     display: none;
@@ -1703,9 +1704,6 @@ figure {
   }
 }
 @media (max-height: 675px) {
-  .headerRight {
-    right: 10%;
-  }
   .headerRight img {
     height: 400px;
     width: 400px;

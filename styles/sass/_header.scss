@@ -126,14 +126,24 @@ span.accentLineBelow {
 }
 
 .headerRight {
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-
-  img {
-    width: 500px;
-    height: 500px;
-  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  .portraitOutline {
+      border-radius: 10px;
+      border: 2px solid $primary;
+      margin: 25px 25px 0 25px;
+        img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            z-index: 1;
+            border-radius: 10px;
+            margin: -25px 25px 25px -25px;
+          } 
+    }
 }
 
 .socialNavBtm {
